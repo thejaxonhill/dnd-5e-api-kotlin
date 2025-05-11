@@ -1,0 +1,228 @@
+type Query {
+    getAbilityScores: [AbilityScore]
+    getAbilityScoreByIndex(index: ID!): AbilityScore
+    getAlignments: [Alignment]
+    getAlignmentByIndex(index: ID!): Alignment
+}
+
+type AbilityScore {
+    index: ID!
+    desc: String
+    fullName: String
+    name: String
+    skills: [ApiReference]
+    url: String
+    updatedAt: String
+}
+
+type Alignment {
+    index: ID!
+    abbreviation: String
+    desc: String
+    name: String
+    url: String
+    updatedAt: String
+}
+
+type Background {
+    index: String
+    name: String
+    startingProficiencies: [ApiReference]
+    languageOptions: Choice
+    startingEquipment: [StartingEquipment]
+    startingEquipmentOptions: [Choice]
+    feature: Feature
+    personalityTraits: Choice
+    ideals: Choice
+    bonds: Choice
+    flaws: Choice
+    url: String
+    updatedAt: String
+}
+
+type Feature {
+    name: String
+    desc: [String]
+}
+
+type StartingEquipment {
+    equipment: ApiReference
+    quantity: Int
+}
+
+type CharacterClass {
+    classLevels: String
+    hitDie: Int
+    index: String
+    name: String
+    proficiencies: [ApiReference]
+    proficiencyChoices: [Choice]
+    savingThrows: [ApiReference]
+    spellcasting: Spellcasting
+    spells: String
+    startingEquipment: [EquipmentQuantity]
+    startingEquipmentOptions: [Choice]
+    multiClassing: MultiClassing
+    subclasses: [ApiReference]
+    url: String
+    updatedAt: String
+}
+
+type EquipmentQuantity {
+    equipment: ApiReference
+    quantity: Int
+}
+
+type MultiClassing {
+    prerequisites: [MultiClassingPrerequisite]
+    prerequisiteOptions: [Choice]
+    proficiencies: [ApiReference]
+    proficiencyChoices: [Choice]
+}
+
+type MultiClassingPrerequisite {
+    abilityScore: ApiReference
+    minimumScore: Int
+}
+
+type Spellcasting {
+    info: [SpellcastingInfo]
+    level: Int
+    spellcastingAbility: ApiReference
+}
+
+type SpellcastingInfo {
+    desc: [String]
+    name: String
+}
+
+#Shared types
+type ApiReference {
+    index: String
+    name: String
+    url: String
+}
+
+type Choice {
+    desc: String
+    choose: Int
+    type: String
+    from: OptionSet
+}
+
+union OptionSet = EquipmentCategoryOptionSet
+    | OptionsArrayOptionSet
+    | ResourceListOptionSet
+
+type EquipmentCategoryOptionSet {
+    optionSetType: String!
+    equipmentCategory: ApiReference
+}
+
+type OptionsArrayOptionSet {
+    optionSetType: String!
+    options: [String]
+}
+
+type ResourceListOptionSet {
+    optionSetType: String!
+    resourceListUrl: String
+}
+
+union Option = ActionOption
+    | BreathOption
+    | ChoiceOption
+    | CountedReferenceOption
+    | DamageOption
+
+type ActionOption {
+    optionType: String!
+    actionName: String
+    count: Int
+    type: ActionType
+    notes: String
+}
+
+enum ActionType {
+    melee
+    ranged
+    ability
+    magic
+}
+
+type BreathOption {
+    optionType: String!
+    name: String
+    damage: [Damage]
+    dt: DifficultyClass
+}
+
+type Damage {
+    damageDice: String
+    damageType: ApiReference
+}
+
+type DifficultyClass {
+    dcType: ApiReference
+    dcValue: Int
+    successType: SuccessType
+}
+
+enum SuccessType {
+    none
+    half
+    other
+}
+
+type ChoiceOption {
+    optionType: String!
+    choice: Choice
+}
+
+type CountedReferenceOption {
+    optionType: String!
+    count: Int
+    of: ApiReference
+    prerequisites: [Prerequisite]
+}
+
+union Prerequisite = ProficiencyPrerequisite
+
+type ProficiencyPrerequisite {
+    type: String!
+    proficiency: ApiReference
+}
+
+type DamageOption {
+    optionType: String!
+    damageType: ApiReference
+    damageDice: String
+    notes: String
+}
+
+type IdealOption {
+    optionType: String!
+    desc: String
+    alignments: [ApiReference]
+}
+
+type MultipleOption {
+    optionType: String!
+    items: [Option]
+}
+
+type ReferenceOption {
+    optionType: String!
+    item: ApiReference
+}
+
+type ScorePrerequisiteOption {
+    optionType: String!
+    abilityScore: ApiReference
+    minimumScore: Int
+}
+
+type StringOption {
+    optionType: String!
+    string: String
+}

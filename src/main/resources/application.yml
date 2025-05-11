@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: dnd-5e-api
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: 5e-database
+      field-naming-strategy: org.springframework.data.mapping.model.SnakeCaseFieldNamingStrategy
+  graphql:
+    graphiql:
+      enabled: true
+  jackson:
+    default-property-inclusion: non_null
