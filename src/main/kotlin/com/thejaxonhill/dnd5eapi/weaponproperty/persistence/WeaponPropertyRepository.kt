@@ -1,5 +1,0 @@
-package com.thejaxonhill.dnd5eapi.weaponproperty.persistence
-
-import com.thejaxonhill.dnd5eapi.shared.persistence.IndexedMongoRepository
-
-interface WeaponPropertyRepository : IndexedMongoRepository<WeaponPropertyDocument, String>

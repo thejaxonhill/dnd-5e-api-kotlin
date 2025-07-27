@@ -1,0 +1,5 @@
+package com.thejaxonhill.dnd5eapi.magicitem.infrastructure.persistence
+
+import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.repository.IndexedMongoRepository
+
+interface MagicItemMongoRepository : IndexedMongoRepository<MagicItemDocument, String>

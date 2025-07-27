@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi
 
-import com.thejaxonhill.dnd5eapi.shared.exception.NotFoundException
+import com.thejaxonhill.dnd5eapi.shared.application.exception.NotFoundException
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.RestControllerAdvice

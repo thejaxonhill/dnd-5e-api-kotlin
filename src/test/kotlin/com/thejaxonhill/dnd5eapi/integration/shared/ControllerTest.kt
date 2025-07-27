@@ -7,6 +7,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
@@ -21,7 +22,7 @@ abstract class ControllerTest(val endpoint: String, val testIndex: String) {
     lateinit var mvc: MockMvc
 
     @Test
-    fun whenGetItems_thenReturnsList() {
+    fun `when get endpoint then returns list with indexed items`() {
         val items = mvc.perform(get(endpoint))
             .andReturn().response.contentAsString.let { om.readTree(it) }
 
@@ -34,12 +35,17 @@ abstract class ControllerTest(val endpoint: String, val testIndex: String) {
     }
 
     @Test
-    fun whenGetItem_thenReturnsSingleItem() {
+    fun `when get item then returns single item with index`() {
         val item = mvc.perform(get("$endpoint/$testIndex"))
             .andReturn().response.contentAsString.let { om.readTree(it) }
 
         val fieldNames = item.fieldNames().asSequence().toList()
         assertTrue(fieldNames.contains("index"))
         fieldNames.forEach { assertNotNull(item.get(it)) }
+    }
+
+    @Test
+    fun `when get missing item then returns 404`() {
+        mvc.perform(get("$endpoint/not-found")).andExpect(status().isNotFound)
     }
 }
