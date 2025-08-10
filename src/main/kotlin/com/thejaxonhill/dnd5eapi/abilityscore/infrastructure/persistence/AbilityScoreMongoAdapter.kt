@@ -18,4 +18,14 @@ class AbilityScoreMongoAdapter(repository: AbilityScoreMongoRepository) :
         url = url,
         updatedAt = updatedAt,
     )
+
+    override fun AbilityScore.toEntity() = AbilityScoreDocument(
+        desc = desc,
+        fullName = fullName,
+        index = index,
+        name = name,
+        skills = skills,
+        url = url,
+        updatedAt = updatedAt,
+    )
 }

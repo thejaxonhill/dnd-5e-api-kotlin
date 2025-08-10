@@ -17,4 +17,13 @@ class AlignmentMongoAdapter(repository: AlignmentMongoRepository) :
         url = url,
         updatedAt = updatedAt,
     )
+
+    override fun Alignment.toEntity() = AlignmentDocument(
+        index = index,
+        name = name,
+        abbreviation = abbreviation,
+        desc = desc,
+        url = url,
+        updatedAt = updatedAt,
+    )
 }
