@@ -47,9 +47,5 @@ fun AbilityScoreDocument.toDomain() = AbilityScore(
     updatedAt = updatedAt,
 )
 
-fun AbilityScoreExample.toAbilityScoreDocument() = AbilityScoreDocument(
-    fullName = fullName,
-    name = name,
-    url = url,
-)
+fun AbilityScoreExample.toAbilityScoreDocument() = AbilityScoreDocument(name = name)
 
