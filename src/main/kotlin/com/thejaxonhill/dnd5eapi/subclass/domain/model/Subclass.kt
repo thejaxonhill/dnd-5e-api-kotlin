@@ -2,7 +2,7 @@ package com.thejaxonhill.dnd5eapi.subclass.domain.model
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
-import java.util.*
+import java.time.LocalDateTime
 
 data class Subclass(
     val id: String? = null,
@@ -15,7 +15,7 @@ data class Subclass(
     val subclassFlavor: String,
     val subclassLevels: String,
     val url: String,
-    val updatedAt: Date,
+    val updatedAt: LocalDateTime,
 )
 
 data class SubclassExample(val name: String? = null)

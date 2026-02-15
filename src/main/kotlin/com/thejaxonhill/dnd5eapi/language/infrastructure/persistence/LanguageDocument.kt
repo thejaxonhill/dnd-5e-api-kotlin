@@ -2,18 +2,18 @@ package com.thejaxonhill.dnd5eapi.language.infrastructure.persistence
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
-import java.util.*
+import java.time.LocalDateTime
 
 @Document(collection = "languages")
-data class LanguageDocument(
+class LanguageDocument(
     @Id
-    val id: String? = null,
-    val desc: String? = null,
-    val index: String? = null,
-    val name: String? = null,
-    val script: String? = null,
-    val type: String? = null,
-    val typicalSpeakers: List<String>? = null,
-    val url: String? = null,
-    val updatedAt: Date? = null
+    var id: String? = null,
+    var desc: String? = null,
+    var index: String? = null,
+    var name: String? = null,
+    var script: String? = null,
+    var type: String? = null,
+    var typicalSpeakers: List<String>? = null,
+    var url: String? = null,
+    var updatedAt: LocalDateTime? = null
 )

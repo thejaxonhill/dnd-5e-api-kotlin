@@ -2,7 +2,7 @@ package com.thejaxonhill.dnd5eapi.race.domain.model
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
-import java.util.*
+import java.time.LocalDateTime
 
 data class Race(
     val id: String? = null,
@@ -23,7 +23,7 @@ data class Race(
     val subraces: List<ApiReference>? = null,
     val traits: List<ApiReference>? = null,
     val url: String,
-    val updatedAt: Date,
+    val updatedAt: LocalDateTime,
 )
 
 data class RaceExample(val name: String? = null)

@@ -5,38 +5,38 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Damage
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
-import java.util.*
+import java.time.LocalDateTime
 
 @Document(collection = "equipment")
-data class EquipmentDocument(
+class EquipmentDocument(
     @Id
-    val id: String? = null,
-    val armorCategory: String? = null,
-    val armorClass: ArmorClass? = null,
-    val capacity: String? = null,
-    val categoryRange: String? = null,
-    val contents: List<Content>? = null,
-    val cost: Cost? = null,
-    val damage: Damage? = null,
-    val desc: String? = null,
-    val equipmentCategory: ApiReference? = null,
-    val gearCategory: ApiReference? = null,
-    val index: String? = null,
-    val name: String? = null,
-    val properties: List<ApiReference>? = null,
-    val quantity: Int? = null,
-    val range: Range? = null,
-    val special: List<String>? = null,
-    val speed: Speed? = null,
-    val stealthDisadvantage: Boolean? = null,
-    val strMinimum: Int? = null,
-    val throwRange: ThrowRange? = null,
-    val toolCategory: String? = null,
-    val twoHandedDamage: TwoHandedDamage? = null,
-    val vehicleCategory: String? = null,
-    val weaponCategory: String? = null,
-    val weaponRange: String? = null,
-    val weight: Double? = null,
-    val url: String? = null,
-    val updatedAt: Date? = null
+    var id: String? = null,
+    var armorCategory: String? = null,
+    var armorClass: ArmorClass? = null,
+    var capacity: String? = null,
+    var categoryRange: String? = null,
+    var contents: List<Content>? = null,
+    var cost: Cost? = null,
+    var damage: Damage? = null,
+    var desc: String? = null,
+    var equipmentCategory: ApiReference? = null,
+    var gearCategory: ApiReference? = null,
+    var index: String? = null,
+    var name: String? = null,
+    var properties: List<ApiReference>? = null,
+    var quantity: Int? = null,
+    var range: Range? = null,
+    var special: List<String>? = null,
+    var speed: Speed? = null,
+    var stealthDisadvantage: Boolean? = null,
+    var strMinimum: Int? = null,
+    var throwRange: ThrowRange? = null,
+    var toolCategory: String? = null,
+    var twoHandedDamage: TwoHandedDamage? = null,
+    var vehicleCategory: String? = null,
+    var weaponCategory: String? = null,
+    var weaponRange: String? = null,
+    var weight: Double? = null,
+    var url: String? = null,
+    var updatedAt: LocalDateTime? = null
 )

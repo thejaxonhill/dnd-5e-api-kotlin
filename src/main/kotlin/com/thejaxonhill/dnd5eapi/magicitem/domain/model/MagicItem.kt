@@ -1,7 +1,7 @@
 package com.thejaxonhill.dnd5eapi.magicitem.domain.model
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
-import java.util.*
+import java.time.LocalDateTime
 
 data class MagicItem(
     val id: String? = null,
@@ -14,7 +14,7 @@ data class MagicItem(
     val url: String,
     val variants: List<ApiReference>,
     val variant: Boolean,
-    val updatedAt: Date,
+    val updatedAt: LocalDateTime,
 )
 
 data class MagicItemExample(val name: String? = null)

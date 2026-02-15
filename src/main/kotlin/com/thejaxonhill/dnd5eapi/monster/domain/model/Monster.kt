@@ -1,7 +1,7 @@
 package com.thejaxonhill.dnd5eapi.monster.domain.model
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
-import java.util.*
+import java.time.LocalDateTime
 
 data class Monster(
     val id: String? = null,
@@ -38,7 +38,7 @@ data class Monster(
     val url: String,
     val wisdom: Int,
     val xp: Long,
-    val updatedAt: Date,
+    val updatedAt: LocalDateTime,
 )
 
 data class MonsterExample(val name: String? = null)

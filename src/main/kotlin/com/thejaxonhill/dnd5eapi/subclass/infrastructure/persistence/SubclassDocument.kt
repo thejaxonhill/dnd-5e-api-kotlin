@@ -5,20 +5,20 @@ import com.thejaxonhill.dnd5eapi.subclass.domain.model.SubclassSpell
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import org.springframework.data.mongodb.core.mapping.Field
-import java.util.*
+import java.time.LocalDateTime
 
 @Document(collection = "subclasses")
-data class SubclassDocument(
+class SubclassDocument(
     @Id
-    val id: String? = null,
+    var id: String? = null,
     @Field("class")
-    val characterClass: ApiReference? = null,
-    val desc: List<String>? = null,
-    val index: String? = null,
-    val name: String? = null,
-    val spells: List<SubclassSpell>? = null,
-    val subclassFlavor: String? = null,
-    val subclassLevels: String? = null,
-    val url: String? = null,
-    val updatedAt: Date? = null
+    var characterClass: ApiReference? = null,
+    var desc: List<String>? = null,
+    var index: String? = null,
+    var name: String? = null,
+    var spells: List<SubclassSpell>? = null,
+    var subclassFlavor: String? = null,
+    var subclassLevels: String? = null,
+    var url: String? = null,
+    var updatedAt: LocalDateTime? = null
 )

@@ -1,4 +1,4 @@
-package com.thejaxonhill.dnd5eapi.shared.infrastructure.delivery.config
+package com.thejaxonhill.dnd5eapi.shared.infrastructure.delivery
 
 import com.thejaxonhill.dnd5eapi.abilityscore.infrastructure.delivery.AbilityScoreTools
 import com.thejaxonhill.dnd5eapi.alignment.infrastructure.delivery.AlignmentTools
@@ -31,7 +31,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
 @Configuration
-class McpConfiguration {
+class DeliveryConfig {
     @Bean
     fun tools(
         abilityScoreTools: AbilityScoreTools,

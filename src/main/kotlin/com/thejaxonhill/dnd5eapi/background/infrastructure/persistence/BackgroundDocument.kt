@@ -6,10 +6,10 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
-import java.util.*
+import java.time.LocalDateTime
 
 @Document(collection = "backgrounds")
-data class BackgroundDocument(
+class BackgroundDocument(
     @Id
     var id: String? = null,
     var index: String? = null,
@@ -24,5 +24,5 @@ data class BackgroundDocument(
     var bonds: Choice? = null,
     var flaws: Choice? = null,
     var url: String? = null,
-    var updatedAt: Date? = null
+    var updatedAt: LocalDateTime? = null
 )

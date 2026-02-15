@@ -2,15 +2,15 @@ package com.thejaxonhill.dnd5eapi.damagetype.infrastructure.persistence
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
-import java.util.*
+import java.time.LocalDateTime
 
 @Document(collection = "damage-types")
-data class DamageTypeDocument(
+class DamageTypeDocument(
     @Id
-    val id: String? = null,
-    val index: String? = null,
-    val name: String? = null,
-    val desc: List<String>? = null,
-    val url: String? = null,
-    val updatedAt: Date? = null
+    var id: String? = null,
+    var index: String? = null,
+    var name: String? = null,
+    var desc: List<String>? = null,
+    var url: String? = null,
+    var updatedAt: LocalDateTime? = null
 )

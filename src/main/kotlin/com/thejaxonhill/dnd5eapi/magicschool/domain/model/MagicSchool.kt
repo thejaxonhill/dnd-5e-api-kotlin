@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.magicschool.domain.model
 
-import java.util.*
+import java.time.LocalDateTime
 
 data class MagicSchool(
     val id: String? = null,
@@ -8,7 +8,7 @@ data class MagicSchool(
     val index: String,
     val name: String,
     val url: String,
-    val updatedAt: Date,
+    val updatedAt: LocalDateTime,
 )
 
 data class MagicSchoolExample(val name: String? = null)

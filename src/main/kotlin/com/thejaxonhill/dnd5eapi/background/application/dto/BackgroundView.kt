@@ -1,11 +1,9 @@
 package com.thejaxonhill.dnd5eapi.background.application.dto
 
 import com.thejaxonhill.dnd5eapi.background.domain.model.Background
-import com.thejaxonhill.dnd5eapi.background.domain.model.Feature
-import com.thejaxonhill.dnd5eapi.background.domain.model.StartingEquipment
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
-import java.util.*
+import java.time.LocalDateTime
 
 data class BackgroundView(
     val index: String,

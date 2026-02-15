@@ -5,15 +5,15 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 
 @Document(collection = "proficiencies")
-data class ProficiencyDocument(
+class ProficiencyDocument(
     @Id
-    val id: String? = null,
-    val classes: List<ApiReference>? = null,
-    val index: String? = null,
-    val name: String? = null,
-    val races: List<ApiReference>? = null,
-    val reference: ApiReference? = null,
-    val type: String? = null,
-    val url: String? = null,
-    val updatedAt: String? = null
+    var id: String? = null,
+    var classes: List<ApiReference>? = null,
+    var index: String? = null,
+    var name: String? = null,
+    var races: List<ApiReference>? = null,
+    var reference: ApiReference? = null,
+    var type: String? = null,
+    var url: String? = null,
+    var updatedAt: String? = null
 )

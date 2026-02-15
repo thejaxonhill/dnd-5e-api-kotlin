@@ -5,28 +5,28 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
-import java.util.*
+import java.time.LocalDateTime
 
 @Document(collection = "races")
-data class RaceDocument(
+class RaceDocument(
     @Id
-    val id: String? = null,
-    val abilityBonusOptions: Choice? = null,
-    val abilityBonuses: List<RaceAbilityBonus>? = null,
-    val age: String? = null,
-    val alignment: String? = null,
-    val index: String? = null,
-    val languageDesc: String? = null,
-    val languageOptions: Choice? = null,
-    val languages: List<ApiReference>? = null,
-    val name: String? = null,
-    val size: String? = null,
-    val sizeDescription: String? = null,
-    val speed: Long? = null,
-    val startingProficiencies: List<ApiReference>? = null,
-    val startingProficiencyOptions: Choice? = null,
-    val subraces: List<ApiReference>? = null,
-    val traits: List<ApiReference>? = null,
-    val url: String? = null,
-    val updatedAt: Date? = null
+    var id: String? = null,
+    var abilityBonusOptions: Choice? = null,
+    var abilityBonuses: List<RaceAbilityBonus>? = null,
+    var age: String? = null,
+    var alignment: String? = null,
+    var index: String? = null,
+    var languageDesc: String? = null,
+    var languageOptions: Choice? = null,
+    var languages: List<ApiReference>? = null,
+    var name: String? = null,
+    var size: String? = null,
+    var sizeDescription: String? = null,
+    var speed: Long? = null,
+    var startingProficiencies: List<ApiReference>? = null,
+    var startingProficiencyOptions: Choice? = null,
+    var subraces: List<ApiReference>? = null,
+    var traits: List<ApiReference>? = null,
+    var url: String? = null,
+    var updatedAt: LocalDateTime? = null
 )

@@ -1,7 +1,7 @@
 package com.thejaxonhill.dnd5eapi.characterclass.application.dto
 
 import com.thejaxonhill.dnd5eapi.characterclass.domain.model.CharacterClass
-import com.thejaxonhill.dnd5eapi.characterclass.domain.model.CharacterClassSpellcasting
+import com.thejaxonhill.dnd5eapi.characterclass.domain.model.Spellcasting
 import com.thejaxonhill.dnd5eapi.characterclass.domain.model.EquipmentQuantity
 import com.thejaxonhill.dnd5eapi.characterclass.domain.model.MultiClassing
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
@@ -15,7 +15,7 @@ data class CharacterClassView(
     val proficiencies: List<ApiReference>,
     val proficiencyChoices: List<Choice>,
     val savingThrows: List<ApiReference>,
-    val spellcasting: CharacterClassSpellcasting?,
+    val spellcasting: Spellcasting?,
     val spells: String?,
     val startingEquipment: List<EquipmentQuantity>?,
     val startingEquipmentOptions: List<Choice>,

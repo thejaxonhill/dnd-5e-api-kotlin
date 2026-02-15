@@ -2,7 +2,7 @@ package com.thejaxonhill.dnd5eapi.level.domain.model
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
-import java.util.*
+import java.time.LocalDateTime
 
 data class Level(
     val id: String? = null,
@@ -18,7 +18,7 @@ data class Level(
     val subclass: ApiReference?,
     val subclassSpecific: SubclassSpecific?,
     val url: String,
-    val updatedAt: Date,
+    val updatedAt: LocalDateTime,
 )
 
 data class LevelExample(val level: Int? = null)

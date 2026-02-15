@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.damagetype.domain.model
 
-import java.util.*
+import java.time.LocalDateTime
 
 data class DamageType(
     val id: String? = null,
@@ -8,7 +8,7 @@ data class DamageType(
     val name: String,
     val desc: List<String>,
     val url: String,
-    val updatedAt: Date
+    val updatedAt: LocalDateTime
 )
 
 data class DamageTypeExample(val name: String? = null)

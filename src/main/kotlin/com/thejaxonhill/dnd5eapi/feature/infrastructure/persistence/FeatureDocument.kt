@@ -6,23 +6,23 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.Prerequisite
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import org.springframework.data.mongodb.core.mapping.Field
-import java.util.*
+import java.time.LocalDateTime
 
 @Document(collection = "features")
-data class FeatureDocument(
+class FeatureDocument(
     @Id
-    val id: String? = null,
+    var id: String? = null,
     @Field("class")
-    val characterClass: ApiReference? = null,
-    val desc: List<String>? = null,
-    val parent: ApiReference? = null,
-    val index: String? = null,
-    val level: Int? = null,
-    val name: String? = null,
-    val prerequisite: List<Prerequisite>? = null,
-    val reference: String? = null,
-    val subclass: ApiReference? = null,
-    val featureSpecific: FeatureSpecific? = null,
-    val url: String? = null,
-    val updatedAt: Date? = null
+    var characterClass: ApiReference? = null,
+    var desc: List<String>? = null,
+    var parent: ApiReference? = null,
+    var index: String? = null,
+    var level: Int? = null,
+    var name: String? = null,
+    var prerequisite: List<Prerequisite>? = null,
+    var reference: String? = null,
+    var subclass: ApiReference? = null,
+    var featureSpecific: FeatureSpecific? = null,
+    var url: String? = null,
+    var updatedAt: LocalDateTime? = null
 )

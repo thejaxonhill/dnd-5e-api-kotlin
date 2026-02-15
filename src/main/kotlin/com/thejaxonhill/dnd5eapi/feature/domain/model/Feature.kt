@@ -2,7 +2,7 @@ package com.thejaxonhill.dnd5eapi.feature.domain.model
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Prerequisite
-import java.util.*
+import java.time.LocalDateTime
 
 data class Feature(
     val id: String? = null,
@@ -17,7 +17,7 @@ data class Feature(
     val subclass: ApiReference?,
     val featureSpecific: FeatureSpecific?,
     val url: String,
-    val updatedAt: Date
+    val updatedAt: LocalDateTime
 )
 
 data class FeatureExample(val name: String? = null)

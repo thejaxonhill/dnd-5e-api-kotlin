@@ -3,16 +3,16 @@ package com.thejaxonhill.dnd5eapi.rule.infrastructure.persistence
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
-import java.util.*
+import java.time.LocalDateTime
 
 @Document(collection = "rules")
-data class RuleDocument(
+class RuleDocument(
     @Id
-    val id: String? = null,
-    val desc: String? = null,
-    val index: String? = null,
-    val name: String? = null,
-    val subsections: List<ApiReference>? = null,
-    val url: String? = null,
-    val updatedAt: Date? = null
+    var id: String? = null,
+    var desc: String? = null,
+    var index: String? = null,
+    var name: String? = null,
+    var subsections: List<ApiReference>? = null,
+    var url: String? = null,
+    var updatedAt: LocalDateTime? = null
 )
