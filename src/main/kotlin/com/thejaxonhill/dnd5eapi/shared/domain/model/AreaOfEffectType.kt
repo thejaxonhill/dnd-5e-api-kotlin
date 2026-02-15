@@ -11,6 +11,7 @@ enum class AreaOfEffectType(@JsonValue val type: String) {
     Unknown("unknown");
 
     companion object {
-        fun fromString(type: String) = entries.firstOrNull { it.type == type } ?: com.thejaxonhill.dnd5eapi.shared.domain.model.AreaOfEffectType.Unknown
+        fun fromString(type: String) = entries.firstOrNull { it.type == type }
+            ?: Unknown
     }
 }

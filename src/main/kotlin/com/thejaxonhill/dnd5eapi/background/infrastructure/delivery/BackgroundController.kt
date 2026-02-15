@@ -19,5 +19,6 @@ class BackgroundController(
     fun getBackgrounds(): ResponseEntity<List<Background>> = ResponseEntity.ok(loadBackgrounds.load())
 
     @GetMapping("/{index}")
-    fun getBackground(@PathVariable index: String): ResponseEntity<Background> = ResponseEntity.ok(loadBackground.load(index))
+    fun getBackground(@PathVariable index: String): ResponseEntity<Background> =
+        ResponseEntity.ok(loadBackground.load(index))
 }

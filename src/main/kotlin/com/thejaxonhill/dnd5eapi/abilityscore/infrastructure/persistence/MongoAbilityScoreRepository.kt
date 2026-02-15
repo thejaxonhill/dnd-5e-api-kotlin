@@ -19,9 +19,9 @@ class MongoAbilityScoreRepository(private val repository: AbilityScoreMongoRepos
 
     override fun loadAll(page: Page, example: AbilityScoreExample?): PagedModel<AbilityScore> =
         repository.findAll(
-            Example.of(example?.toAbilityScoreDocument()),
+            Example.of(example?.toAbilityScoreDocument() ?: AbilityScoreDocument()),
             page.toPageable()
-        ).map { it.toDomain() }.toPagedModel()
+        ).toPagedModel().map { it.toDomain() }
 
     override fun save(abilityScore: AbilityScore) = repository.save(abilityScore.toDocument()).toDomain()
 }
@@ -47,5 +47,5 @@ fun AbilityScoreDocument.toDomain() = AbilityScore(
     updatedAt = updatedAt,
 )
 
-fun AbilityScoreExample.toAbilityScoreDocument() = AbilityScoreDocument(name = name)
+fun AbilityScoreExample.toAbilityScoreDocument(): AbilityScoreDocument = AbilityScoreDocument(name = name)
 

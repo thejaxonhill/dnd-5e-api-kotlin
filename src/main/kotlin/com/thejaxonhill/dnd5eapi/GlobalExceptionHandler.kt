@@ -1,18 +1,23 @@
 package com.thejaxonhill.dnd5eapi
 
-import com.thejaxonhill.dnd5eapi.shared.application.exception.NotFoundException
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.RestControllerAdvice
-import org.springframework.web.servlet.resource.NoResourceFoundException
 
 @RestControllerAdvice
 class GlobalExceptionHandler {
     @ExceptionHandler(value = [RuntimeException::class])
-    fun handleRuntimeException(runtimeException: RuntimeException): ResponseEntity<Any> =
-        ResponseEntity.badRequest().body(runtimeException.message)
+    fun handleRuntimeException(e: RuntimeException): ResponseEntity<ErrorResponse> =
+        ResponseEntity.badRequest().body(e.toErrorResponse())
 
-    @ExceptionHandler(value = [NotFoundException::class, NoResourceFoundException::class])
-    fun handleNotFoundException(): ResponseEntity<Any> =
-        ResponseEntity.notFound().build()
+    @ExceptionHandler(value = [Exception::class])
+    fun handleException(e: Exception): ResponseEntity<ErrorResponse> =
+        ResponseEntity.internalServerError().body(e.toErrorResponse())
+
+    @ExceptionHandler(value = [NoSuchElementException::class])
+    fun handleNoSuchElementException(): ResponseEntity<Void> = ResponseEntity.notFound().build()
 }
+
+fun Exception.toErrorResponse() = ErrorResponse(message ?: "An unexpected error occurred", 500)
+
+data class ErrorResponse(val message: String, val status: Int)

@@ -6,7 +6,7 @@ import com.thejaxonhill.dnd5eapi.shared.infrastructure.stereotype.McpTools
 import org.springframework.ai.tool.annotation.Tool
 
 @McpTools
-class CharacterClassTools (
+class CharacterClassTools(
     private val loadCharacterClass: LoadCharacterClass,
     private val loadCharacterClasses: LoadCharacterClasses
 ) {

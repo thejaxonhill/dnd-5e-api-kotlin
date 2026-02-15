@@ -2,7 +2,7 @@ package com.thejaxonhill.dnd5eapi.spell.domain.model
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.AreaOfEffect
-import java.util.Date
+import java.util.*
 
 data class Spell(
     val areaOfEffect: AreaOfEffect? = null,

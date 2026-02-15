@@ -1,12 +1,15 @@
 package com.thejaxonhill.dnd5eapi.alignment.domain.model
 
-import java.util.*
+import java.time.LocalDateTime
 
-data class Alignment(
+class Alignment(
+    val id: String? = null,
     val index: String,
-    val name: String,
-    val abbreviation: String,
-    val desc: String,
-    val url: String,
-    val updatedAt: Date
+    val name: String? = null,
+    val abbreviation: String? = null,
+    val desc: String? = null,
+    val url: String? = null,
+    val updatedAt: LocalDateTime? = null
 )
+
+data class AlignmentExample(val name: String, val abbreviation: String)

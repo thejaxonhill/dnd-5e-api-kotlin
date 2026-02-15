@@ -7,13 +7,13 @@ import org.springframework.stereotype.Component
 
 @Component
 class WeaponPropertyMongoAdapter(repository: WeaponPropertyMongoRepository) :
-        MongoAdapter<WeaponProperty, WeaponPropertyDocument>(repository),
-        LoadWeaponPropertyPort {
-        override fun WeaponPropertyDocument.toDomain() = WeaponProperty(
-                desc = desc,
-                index = index,
-                name = name,
-                url = url,
-                updatedAt = updatedAt,
-        )
+    MongoAdapter<WeaponProperty, WeaponPropertyDocument>(repository),
+    LoadWeaponPropertyPort {
+    override fun WeaponPropertyDocument.toDomain() = WeaponProperty(
+        desc = desc,
+        index = index,
+        name = name,
+        url = url,
+        updatedAt = updatedAt,
+    )
 }

@@ -13,7 +13,7 @@ class AbilityScoreTools(
     private val loadAbilityScores: LoadAbilityScores
 ) {
     @Tool
-    fun getAbilityScores( page: Page, abilityScoreExample: AbilityScoreExample? = null) =
+    fun getAbilityScores(page: Page, abilityScoreExample: AbilityScoreExample? = null) =
         loadAbilityScores.load(page, abilityScoreExample)
 
     @Tool

@@ -9,9 +9,9 @@ enum class SuccessType(@JsonValue val type: String) {
 
     companion object {
         fun fromString(type: String) = when (type) {
-            com.thejaxonhill.dnd5eapi.shared.domain.model.SuccessType.None.type -> com.thejaxonhill.dnd5eapi.shared.domain.model.SuccessType.None
-            com.thejaxonhill.dnd5eapi.shared.domain.model.SuccessType.Half.type -> com.thejaxonhill.dnd5eapi.shared.domain.model.SuccessType.Half
-            else -> com.thejaxonhill.dnd5eapi.shared.domain.model.SuccessType.Other
+            None.type -> None
+            Half.type -> Half
+            else -> Other
         }
     }
 }

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component
 @Component
 class MagicSchoolMongoAdapter(repository: MagicSchoolMongoRepository) :
     MongoAdapter<MagicSchool, MagicSchoolDocument>(repository),
-    MagicSchoolRepository{
+    MagicSchoolRepository {
     override fun MagicSchoolDocument.toDomain() = MagicSchool(
         desc = desc,
         index = index,

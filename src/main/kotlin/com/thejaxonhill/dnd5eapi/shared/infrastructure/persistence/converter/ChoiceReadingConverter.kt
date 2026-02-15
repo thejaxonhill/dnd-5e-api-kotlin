@@ -40,7 +40,7 @@ fun Document.toOption(): Option? = when (getString("option_type")) {
         bonus = getInteger("bonus")
     )
 
-    "action" -> com.thejaxonhill.dnd5eapi.shared.domain.model.ActionOption(
+    "action" -> ActionOption(
         actionName = getString("action_name"),
         count = getInteger("count"),
         type = ActionType.fromString(getString("type"))!!,
@@ -53,7 +53,7 @@ fun Document.toOption(): Option? = when (getString("option_type")) {
             DifficultyClass(
                 dcType = it.getApiReference("dc_type")!!,
                 dcValue = it.getInteger("dc_value"),
-                successType = com.thejaxonhill.dnd5eapi.shared.domain.model.SuccessType.fromString(it.getString("success_type")),
+                successType = SuccessType.fromString(it.getString("success_type")),
             )
         },
         damage = getDocumentList("damage")?.map {
@@ -64,8 +64,8 @@ fun Document.toOption(): Option? = when (getString("option_type")) {
         }
     )
 
-    "choice" -> com.thejaxonhill.dnd5eapi.shared.domain.model.ChoiceOption(choice = getChoice("choice")!!)
-    "counted_reference" -> com.thejaxonhill.dnd5eapi.shared.domain.model.CountedReferenceOption(
+    "choice" -> ChoiceOption(choice = getChoice("choice")!!)
+    "counted_reference" -> CountedReferenceOption(
         count = getInteger("count"),
         of = getApiReference("of")!!,
         prerequisites = getDocumentList("prerequisites")?.mapNotNull {
@@ -79,7 +79,7 @@ fun Document.toOption(): Option? = when (getString("option_type")) {
         }
     )
 
-    "damage" -> com.thejaxonhill.dnd5eapi.shared.domain.model.DamageOption(
+    "damage" -> DamageOption(
         damageType = getApiReference("damage_type")!!,
         damageDice = getString("damage_dice"),
         notes = getString("notes")
@@ -102,7 +102,7 @@ fun Document.toOption(): Option? = when (getString("option_type")) {
         item = getApiReference("item")!!,
     )
 
-    "score_prerequisite" -> com.thejaxonhill.dnd5eapi.shared.domain.model.ScorePrerequisiteOption(
+    "score_prerequisite" -> ScorePrerequisiteOption(
         abilityScore = getApiReference("ability_score")!!,
         minimumScore = getInteger("minimum_score")
     )

@@ -3,14 +3,10 @@ package com.thejaxonhill.dnd5eapi.abilityscore.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.abilityscore.application.dto.AbilityScoreView
 import com.thejaxonhill.dnd5eapi.abilityscore.application.usecase.LoadAbilityScoreByIndex
 import com.thejaxonhill.dnd5eapi.abilityscore.application.usecase.LoadAbilityScores
-import com.thejaxonhill.dnd5eapi.abilityscore.domain.AbilityScore
 import com.thejaxonhill.dnd5eapi.abilityscore.domain.AbilityScoreExample
-import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation
-import io.swagger.v3.oas.annotations.responses.ApiResponse
-import io.swagger.v3.oas.annotations.responses.ApiResponses
 import io.swagger.v3.oas.annotations.tags.Tag
 import org.springdoc.core.annotations.ParameterObject
 import org.springframework.data.domain.Pageable

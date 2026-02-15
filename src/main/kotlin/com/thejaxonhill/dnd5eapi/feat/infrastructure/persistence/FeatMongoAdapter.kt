@@ -10,11 +10,11 @@ class FeatMongoAdapter(repository: FeatMongoRepository) :
     MongoAdapter<Feat, FeatDocument>(repository),
     FeatRepository {
     override fun FeatDocument.toDomain() = Feat(
-         index = index,
-         name = name,
-         prerequisites = prerequisites,
-         desc = desc,
-         url = url,
-         updatedAt = updatedAt,
+        index = index,
+        name = name,
+        prerequisites = prerequisites,
+        desc = desc,
+        url = url,
+        updatedAt = updatedAt,
     )
 }

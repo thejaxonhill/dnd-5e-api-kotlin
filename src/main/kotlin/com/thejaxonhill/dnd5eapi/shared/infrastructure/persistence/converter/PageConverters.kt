@@ -8,7 +8,7 @@ import org.springframework.data.domain.Sort
 fun Page.toPageable(): Pageable = PageRequest.of(page ?: 0, size ?: 10, sort?.toSort())
 
 fun Pageable.toPage(): Page = Page(
-    pageNumber, 
+    pageNumber,
     pageSize,
     sort.map { "${it.property},${it.direction.name.lowercase()}" }.toList()
 )
@@ -21,6 +21,6 @@ private fun List<String>.toSort() = map { it.trim() }
             .map { it.trim() }
             .let { parts -> parts[0] to parts.getOrNull(1) }
 
-        val direction = dir?.let { Sort.Direction.fromString(dir)} ?: Sort.Direction.ASC
+        val direction = dir?.let { Sort.Direction.fromString(dir) } ?: Sort.Direction.ASC
         Sort.Order(direction, property)
     }.let { orders -> if (orders.isEmpty()) Sort.unsorted() else Sort.by(orders) }
