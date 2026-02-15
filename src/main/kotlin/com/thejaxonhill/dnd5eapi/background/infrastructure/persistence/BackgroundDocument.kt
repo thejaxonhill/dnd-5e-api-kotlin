@@ -9,20 +9,20 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "backgrounds")
-class BackgroundDocument(
+data class BackgroundDocument(
     @Id
     val id: String? = null,
-    val index: String,
-    val name: String,
-    val startingProficiencies: List<ApiReference>,
-    val languageOptions: Choice,
-    val startingEquipment: List<StartingEquipment>,
-    val startingEquipmentOptions: List<Choice>,
-    val feature: Feature,
-    val personalityTraits: Choice,
-    val ideals: Choice,
-    val bonds: Choice,
-    val flaws: Choice,
-    val url: String,
-    val updatedAt: Date
+    val index: String? = null,
+    val name: String? = null,
+    val startingProficiencies: List<ApiReference>? = null,
+    val languageOptions: Choice? = null,
+    val startingEquipment: List<StartingEquipment>? = null,
+    val startingEquipmentOptions: List<Choice>? = null,
+    val feature: Feature? = null,
+    val personalityTraits: Choice? = null,
+    val ideals: Choice? = null,
+    val bonds: Choice? = null,
+    val flaws: Choice? = null,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

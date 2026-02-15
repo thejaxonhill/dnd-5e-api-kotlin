@@ -5,6 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 import java.util.*
 
 data class Background(
+    val id: String? = null,
     val index: String,
     val name: String,
     val startingProficiencies: List<ApiReference>,
@@ -19,3 +20,5 @@ data class Background(
     val url: String,
     val updatedAt: Date
 )
+
+data class BackgroundExample(val name: String? = null)
