@@ -9,5 +9,5 @@ interface AlignmentRepository {
     fun load(id: String): Alignment?
     fun loadByIndex(index: String): Alignment?
     fun loadAll(page: Page, example: AlignmentExample? = null): PagedModel<Alignment>
-    fun save(abilityScore: Alignment): Alignment
+    fun save(alignment: Alignment): Alignment
 }
