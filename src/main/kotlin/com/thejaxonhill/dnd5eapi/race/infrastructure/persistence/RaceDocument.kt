@@ -8,25 +8,25 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "races")
-class RaceDocument(
+data class RaceDocument(
     @Id
-    var id: String? = null,
+    val id: String? = null,
     val abilityBonusOptions: Choice? = null,
-    val abilityBonuses: List<RaceAbilityBonus>,
-    val age: String,
-    val alignment: String,
-    val index: String,
-    val languageDesc: String,
+    val abilityBonuses: List<RaceAbilityBonus>? = null,
+    val age: String? = null,
+    val alignment: String? = null,
+    val index: String? = null,
+    val languageDesc: String? = null,
     val languageOptions: Choice? = null,
-    val languages: List<ApiReference>,
-    val name: String,
-    val size: String,
-    val sizeDescription: String,
-    val speed: Long,
+    val languages: List<ApiReference>? = null,
+    val name: String? = null,
+    val size: String? = null,
+    val sizeDescription: String? = null,
+    val speed: Long? = null,
     val startingProficiencies: List<ApiReference>? = null,
     val startingProficiencyOptions: Choice? = null,
     val subraces: List<ApiReference>? = null,
     val traits: List<ApiReference>? = null,
-    val url: String,
-    val updatedAt: Date,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

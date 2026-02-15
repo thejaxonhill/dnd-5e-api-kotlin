@@ -9,19 +9,19 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "traits")
-class TraitDocument(
+data class TraitDocument(
     @Id
     val id: String? = null,
-    val desc: List<String>,
-    val index: String,
-    val name: String,
+    val desc: List<String>? = null,
+    val index: String? = null,
+    val name: String? = null,
     val proficiencies: List<TraitProficiency>? = null,
-    val proficiencyChoices: Choice?,
+    val proficiencyChoices: Choice? = null,
     val languageOptions: Choice? = null,
-    val races: List<ApiReference>,
-    val subraces: List<ApiReference>,
-    val parent: ApiReference?,
+    val races: List<ApiReference>? = null,
+    val subraces: List<ApiReference>? = null,
+    val parent: ApiReference? = null,
     val traitSpecific: TraitSpecific? = null,
-    val url: String,
-    val updatedAt: Date,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

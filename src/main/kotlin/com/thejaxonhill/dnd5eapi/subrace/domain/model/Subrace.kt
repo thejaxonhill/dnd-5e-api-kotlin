@@ -5,6 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 import java.util.*
 
 data class Subrace(
+    val id: String? = null,
     val abilityBonuses: List<SubraceAbilityBonus>,
     val desc: String,
     val index: String,
@@ -17,3 +18,5 @@ data class Subrace(
     val url: String,
     val updatedAt: Date,
 )
+
+data class SubraceExample(val name: String? = null)

@@ -10,22 +10,22 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "classes")
-class CharacterClassDocument(
+data class CharacterClassDocument(
     @Id
     val id: String? = null,
-    val classLevels: String,
-    val hitDie: Int,
-    val index: String,
-    val name: String,
-    val proficiencies: List<ApiReference>,
-    val proficiencyChoices: List<Choice>,
-    val savingThrows: List<ApiReference>,
-    val spellcasting: CharacterClassSpellcasting?,
-    val spells: String?,
-    val startingEquipment: List<EquipmentQuantity>?,
-    val startingEquipmentOptions: List<Choice>,
-    val multiClassing: MultiClassing,
-    val subclasses: List<ApiReference>,
-    val url: String,
-    val updatedAt: Date
+    val classLevels: String? = null,
+    val hitDie: Int? = null,
+    val index: String? = null,
+    val name: String? = null,
+    val proficiencies: List<ApiReference>? = null,
+    val proficiencyChoices: List<Choice>? = null,
+    val savingThrows: List<ApiReference>? = null,
+    val spellcasting: CharacterClassSpellcasting? = null,
+    val spells: String? = null,
+    val startingEquipment: List<EquipmentQuantity>? = null,
+    val startingEquipmentOptions: List<Choice>? = null,
+    val multiClassing: MultiClassing? = null,
+    val subclasses: List<ApiReference>? = null,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

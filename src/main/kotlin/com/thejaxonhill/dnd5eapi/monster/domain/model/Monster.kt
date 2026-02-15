@@ -4,10 +4,11 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import java.util.*
 
 data class Monster(
+    val id: String? = null,
     val actions: List<MonsterAction>? = null,
     val alignment: String,
     val armorClass: List<MonsterArmorClass>,
-    val challengeRating: Long,
+    val challengeRating: Double,
     val charisma: Int,
     val conditionImmunities: List<ApiReference>,
     val constitution: Int,
@@ -39,3 +40,5 @@ data class Monster(
     val xp: Long,
     val updatedAt: Date,
 )
+
+data class MonsterExample(val name: String? = null)

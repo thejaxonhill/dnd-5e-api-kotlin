@@ -6,13 +6,13 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "rules")
-class RuleDocument(
+data class RuleDocument(
     @Id
     val id: String? = null,
-    val desc: String,
-    val index: String,
-    val name: String,
-    val subsections: List<ApiReference>,
-    val url: String,
-    val updatedAt: Date,
+    val desc: String? = null,
+    val index: String? = null,
+    val name: String? = null,
+    val subsections: List<ApiReference>? = null,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

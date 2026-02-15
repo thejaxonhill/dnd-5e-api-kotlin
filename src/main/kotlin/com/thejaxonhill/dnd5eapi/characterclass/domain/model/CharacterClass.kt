@@ -5,6 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 import java.util.*
 
 data class CharacterClass(
+    val id: String? = null,
     val classLevels: String,
     val hitDie: Int,
     val index: String,
@@ -21,3 +22,5 @@ data class CharacterClass(
     val url: String,
     val updatedAt: Date
 )
+
+data class CharacterClassExample(val name: String? = null)

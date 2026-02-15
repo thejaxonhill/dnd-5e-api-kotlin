@@ -7,17 +7,17 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "magic-items")
-class MagicItemDocument(
+data class MagicItemDocument(
     @Id
     val id: String? = null,
-    val desc: List<String>,
-    val equipmentCategory: ApiReference,
+    val desc: List<String>? = null,
+    val equipmentCategory: ApiReference? = null,
     val image: String? = null,
-    val index: String,
-    val name: String,
-    val rarity: Rarity,
-    val url: String,
-    val variants: List<ApiReference>,
-    val variant: Boolean,
-    val updatedAt: Date,
+    val index: String? = null,
+    val name: String? = null,
+    val rarity: Rarity? = null,
+    val url: String? = null,
+    val variants: List<ApiReference>? = null,
+    val variant: Boolean? = null,
+    val updatedAt: Date? = null
 )

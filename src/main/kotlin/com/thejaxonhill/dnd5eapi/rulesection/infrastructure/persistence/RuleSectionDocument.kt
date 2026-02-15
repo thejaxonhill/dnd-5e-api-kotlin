@@ -4,12 +4,12 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 
 @Document(collection = "rule-sections")
-class RuleSectionDocument(
+data class RuleSectionDocument(
     @Id
     val id: String? = null,
-    val desc: String,
-    val index: String,
-    val name: String,
-    val url: String,
-    val updatedAt: String,
+    val desc: String? = null,
+    val index: String? = null,
+    val name: String? = null,
+    val url: String? = null,
+    val updatedAt: String? = null
 )

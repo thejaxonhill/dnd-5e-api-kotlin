@@ -4,6 +4,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import java.util.*
 
 data class MagicItem(
+    val id: String? = null,
     val desc: List<String>,
     val equipmentCategory: ApiReference,
     val image: String? = null,
@@ -15,3 +16,5 @@ data class MagicItem(
     val variant: Boolean,
     val updatedAt: Date,
 )
+
+data class MagicItemExample(val name: String? = null)

@@ -1,6 +1,13 @@
 package com.thejaxonhill.dnd5eapi.magicitem.domain.repository
 
 import com.thejaxonhill.dnd5eapi.magicitem.domain.model.MagicItem
-import com.thejaxonhill.dnd5eapi.shared.domain.repository.BaseRepository
+import com.thejaxonhill.dnd5eapi.magicitem.domain.model.MagicItemExample
+import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
+import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 
-interface MagicItemRepository : BaseRepository<MagicItem, String>
+interface MagicItemRepository {
+    fun load(id: String): MagicItem?
+    fun loadByIndex(index: String): MagicItem?
+    fun loadAll(page: Page, example: MagicItemExample? = null): PagedModel<MagicItem>
+    fun save(magicItem: MagicItem): MagicItem
+}

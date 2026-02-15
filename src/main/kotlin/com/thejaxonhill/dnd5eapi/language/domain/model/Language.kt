@@ -3,6 +3,7 @@ package com.thejaxonhill.dnd5eapi.language.domain.model
 import java.util.*
 
 data class Language(
+    val id: String? = null,
     val desc: String? = null,
     val index: String,
     val name: String,
@@ -12,3 +13,5 @@ data class Language(
     val url: String,
     val updatedAt: Date,
 )
+
+data class LanguageExample(val name: String? = null)

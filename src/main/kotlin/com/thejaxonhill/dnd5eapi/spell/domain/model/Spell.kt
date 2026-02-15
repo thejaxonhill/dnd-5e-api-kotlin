@@ -5,6 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.AreaOfEffect
 import java.util.*
 
 data class Spell(
+    val id: String? = null,
     val areaOfEffect: AreaOfEffect? = null,
     val attackType: String? = null,
     val castingTime: String,
@@ -28,3 +29,5 @@ data class Spell(
     val url: String,
     val updatedAt: Date,
 )
+
+data class SpellExample(val name: String? = null)

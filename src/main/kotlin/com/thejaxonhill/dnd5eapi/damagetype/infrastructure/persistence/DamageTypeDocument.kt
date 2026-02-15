@@ -5,12 +5,12 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "damage-types")
-class DamageTypeDocument(
+data class DamageTypeDocument(
     @Id
     val id: String? = null,
-    val index: String,
-    val name: String,
-    val desc: List<String>,
-    val url: String,
-    val updatedAt: Date
+    val index: String? = null,
+    val name: String? = null,
+    val desc: List<String>? = null,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

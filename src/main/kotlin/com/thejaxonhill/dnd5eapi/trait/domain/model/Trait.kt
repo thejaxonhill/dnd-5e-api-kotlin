@@ -5,6 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 import java.util.*
 
 data class Trait(
+    val id: String? = null,
     val desc: List<String>,
     val index: String,
     val name: String,
@@ -18,3 +19,5 @@ data class Trait(
     val url: String,
     val updatedAt: Date,
 )
+
+data class TraitExample(val name: String? = null)

@@ -5,6 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.Prerequisite
 import java.util.*
 
 data class Feature(
+    val id: String? = null,
     val characterClass: ApiReference,
     val desc: List<String>,
     val parent: ApiReference? = null,
@@ -18,3 +19,5 @@ data class Feature(
     val url: String,
     val updatedAt: Date
 )
+
+data class FeatureExample(val name: String? = null)

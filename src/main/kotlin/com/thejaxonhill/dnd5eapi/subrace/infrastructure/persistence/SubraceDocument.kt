@@ -8,18 +8,18 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "subraces")
-class SubraceDocument(
+data class SubraceDocument(
     @Id
     val id: String? = null,
-    val abilityBonuses: List<SubraceAbilityBonus>,
-    val desc: String,
-    val index: String,
+    val abilityBonuses: List<SubraceAbilityBonus>? = null,
+    val desc: String? = null,
+    val index: String? = null,
     val languages: List<ApiReference>? = null,
     val languageOptions: Choice? = null,
-    val name: String,
-    val race: ApiReference,
-    val racialTraits: List<ApiReference>,
+    val name: String? = null,
+    val race: ApiReference? = null,
+    val racialTraits: List<ApiReference>? = null,
     val startingProficiencies: List<ApiReference>? = null,
-    val url: String,
-    val updatedAt: Date,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

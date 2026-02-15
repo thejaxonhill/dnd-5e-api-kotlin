@@ -5,12 +5,12 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "magic-schools")
-class MagicSchoolDocument(
+data class MagicSchoolDocument(
     @Id
     val id: String? = null,
-    val desc: String,
-    val index: String,
-    val name: String,
-    val url: String,
-    val updatedAt: Date,
+    val desc: String? = null,
+    val index: String? = null,
+    val name: String? = null,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

@@ -5,6 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 import java.util.*
 
 data class Race(
+    val id: String? = null,
     val abilityBonusOptions: Choice? = null,
     val abilityBonuses: List<RaceAbilityBonus>,
     val age: String,
@@ -24,3 +25,5 @@ data class Race(
     val url: String,
     val updatedAt: Date,
 )
+
+data class RaceExample(val name: String? = null)

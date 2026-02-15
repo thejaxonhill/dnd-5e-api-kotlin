@@ -5,15 +5,15 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "languages")
-class LanguageDocument(
+data class LanguageDocument(
     @Id
     val id: String? = null,
     val desc: String? = null,
-    val index: String,
-    val name: String,
+    val index: String? = null,
+    val name: String? = null,
     val script: String? = null,
-    val type: String,
-    val typicalSpeakers: List<String>,
-    val url: String,
-    val updatedAt: Date,
+    val type: String? = null,
+    val typicalSpeakers: List<String>? = null,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

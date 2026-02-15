@@ -6,12 +6,12 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "equipment-categories")
-class EquipmentCategoryDocument(
+data class EquipmentCategoryDocument(
     @Id
     val id: String? = null,
-    val equipment: List<ApiReference>,
-    val index: String,
-    val name: String,
-    val url: String,
-    val updatedAt: Date
+    val equipment: List<ApiReference>? = null,
+    val index: String? = null,
+    val name: String? = null,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

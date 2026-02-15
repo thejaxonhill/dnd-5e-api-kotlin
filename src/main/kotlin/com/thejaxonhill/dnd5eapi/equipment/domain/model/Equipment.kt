@@ -5,6 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.Damage
 import java.util.*
 
 data class Equipment(
+    val id: String? = null,
     val armorCategory: String? = null,
     val armorClass: ArmorClass? = null,
     val capacity: String? = null,
@@ -34,3 +35,5 @@ data class Equipment(
     val url: String,
     val updatedAt: Date
 )
+
+data class EquipmentExample(val name: String? = null)

@@ -5,6 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import java.util.*
 
 data class Level(
+    val id: String? = null,
     val abilityScoreBonuses: Long? = null,
     @get:JsonProperty("class")
     val characterClass: ApiReference,
@@ -19,3 +20,5 @@ data class Level(
     val url: String,
     val updatedAt: Date,
 )
+
+data class LevelExample(val level: Int? = null)

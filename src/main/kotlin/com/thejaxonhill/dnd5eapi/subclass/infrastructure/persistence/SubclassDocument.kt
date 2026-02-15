@@ -8,17 +8,17 @@ import org.springframework.data.mongodb.core.mapping.Field
 import java.util.*
 
 @Document(collection = "subclasses")
-class SubclassDocument(
+data class SubclassDocument(
     @Id
     val id: String? = null,
     @Field("class")
-    val characterClass: ApiReference,
-    val desc: List<String>,
-    val index: String,
-    val name: String,
+    val characterClass: ApiReference? = null,
+    val desc: List<String>? = null,
+    val index: String? = null,
+    val name: String? = null,
     val spells: List<SubclassSpell>? = null,
-    val subclassFlavor: String,
-    val subclassLevels: String,
-    val url: String,
-    val updatedAt: Date,
+    val subclassFlavor: String? = null,
+    val subclassLevels: String? = null,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

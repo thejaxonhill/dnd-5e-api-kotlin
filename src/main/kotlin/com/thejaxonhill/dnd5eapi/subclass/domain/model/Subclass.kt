@@ -5,6 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import java.util.*
 
 data class Subclass(
+    val id: String? = null,
     @get:JsonProperty("class")
     val characterClass: ApiReference,
     val desc: List<String>,
@@ -16,3 +17,5 @@ data class Subclass(
     val url: String,
     val updatedAt: Date,
 )
+
+data class SubclassExample(val name: String? = null)

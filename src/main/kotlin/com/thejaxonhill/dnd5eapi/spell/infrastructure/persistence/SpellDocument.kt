@@ -9,29 +9,29 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "spells")
-class SpellDocument(
+data class SpellDocument(
     @Id
     val id: String? = null,
     val areaOfEffect: AreaOfEffect? = null,
     val attackType: String? = null,
-    val castingTime: String,
-    val classes: List<ApiReference>,
-    val components: List<String>,
-    val concentration: Boolean,
+    val castingTime: String? = null,
+    val classes: List<ApiReference>? = null,
+    val components: List<String>? = null,
+    val concentration: Boolean? = null,
     val damage: SpellDamage? = null,
     val dc: SpellDc? = null,
-    val desc: List<String>,
-    val duration: String,
+    val desc: List<String>? = null,
+    val duration: String? = null,
     val healAtSlotLevel: Map<Int, String>? = null,
     val higherLevel: List<String>? = null,
-    val index: String,
-    val level: Int,
+    val index: String? = null,
+    val level: Int? = null,
     val material: String? = null,
-    val name: String,
-    val range: String,
-    val ritual: Boolean,
-    val school: ApiReference,
-    val subclasses: List<ApiReference>,
-    val url: String,
-    val updatedAt: Date,
+    val name: String? = null,
+    val range: String? = null,
+    val ritual: Boolean? = null,
+    val school: ApiReference? = null,
+    val subclasses: List<ApiReference>? = null,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )

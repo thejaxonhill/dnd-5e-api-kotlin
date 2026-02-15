@@ -10,20 +10,20 @@ import org.springframework.data.mongodb.core.mapping.Field
 import java.util.*
 
 @Document(collection = "levels")
-class LevelDocument(
+data class LevelDocument(
     @Id
     val id: String? = null,
     val abilityScoreBonuses: Long? = null,
     @Field("class")
-    val characterClass: ApiReference,
+    val characterClass: ApiReference? = null,
     val classSpecific: ClassSpecific? = null,
-    val features: List<ApiReference>,
-    val index: String,
-    val level: Int,
+    val features: List<ApiReference>? = null,
+    val index: String? = null,
+    val level: Int? = null,
     val profBonus: Int? = null,
     val spellcasting: SpellcastingSlots? = null,
-    val subclass: ApiReference?,
-    val subclassSpecific: SubclassSpecific?,
-    val url: String,
-    val updatedAt: Date,
+    val subclass: ApiReference? = null,
+    val subclassSpecific: SubclassSpecific? = null,
+    val url: String? = null,
+    val updatedAt: Date? = null
 )
