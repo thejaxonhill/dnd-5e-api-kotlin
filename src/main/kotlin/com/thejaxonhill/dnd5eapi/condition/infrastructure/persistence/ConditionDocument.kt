@@ -5,12 +5,12 @@ import org.springframework.data.mongodb.core.mapping.Document
 import java.util.*
 
 @Document(collection = "conditions")
-class ConditionDocument(
+data class ConditionDocument(
     @Id
-    val id: String? = null,
-    val index: String,
-    val name: String,
-    val desc: List<String>,
-    val url: String,
-    val updatedAt: Date
+    var id: String? = null,
+    var index: String? = null,
+    var name: String? = null,
+    var desc: List<String>? = null,
+    var url: String? = null,
+    var updatedAt: Date? = null
 )

@@ -11,18 +11,18 @@ import java.util.*
 @Document(collection = "backgrounds")
 data class BackgroundDocument(
     @Id
-    val id: String? = null,
-    val index: String? = null,
-    val name: String? = null,
-    val startingProficiencies: List<ApiReference>? = null,
-    val languageOptions: Choice? = null,
-    val startingEquipment: List<StartingEquipment>? = null,
-    val startingEquipmentOptions: List<Choice>? = null,
-    val feature: Feature? = null,
-    val personalityTraits: Choice? = null,
-    val ideals: Choice? = null,
-    val bonds: Choice? = null,
-    val flaws: Choice? = null,
-    val url: String? = null,
-    val updatedAt: Date? = null
+    var id: String? = null,
+    var index: String? = null,
+    var name: String? = null,
+    var startingProficiencies: List<ApiReference>? = null,
+    var languageOptions: Choice? = null,
+    var startingEquipment: List<StartingEquipment>? = null,
+    var startingEquipmentOptions: List<Choice>? = null,
+    var feature: Feature? = null,
+    var personalityTraits: Choice? = null,
+    var ideals: Choice? = null,
+    var bonds: Choice? = null,
+    var flaws: Choice? = null,
+    var url: String? = null,
+    var updatedAt: Date? = null
 )
