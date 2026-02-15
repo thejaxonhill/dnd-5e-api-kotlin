@@ -1,14 +1,17 @@
-package com.thejaxonhill.dnd5eapi.abilityscore.domain.model
+package com.thejaxonhill.dnd5eapi.abilityscore.domain
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
-import java.util.*
+import java.time.LocalDateTime
 
-data class AbilityScore(
+class AbilityScore(
+    val id: String? = null,
     val desc: List<String>? = null,
     val fullName: String? = null,
     val index: String? = null,
     val name: String? = null,
     val skills: List<ApiReference>? = null,
     val url: String? = null,
-    val updatedAt: Date? = null
+    val updatedAt: LocalDateTime? = null
 )
+
+data class AbilityScoreExample(val name: String)
