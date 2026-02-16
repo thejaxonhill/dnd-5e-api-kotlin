@@ -30,4 +30,4 @@ data class Spell(
     val updatedAt: LocalDateTime,
 )
 
-data class SpellExample(val name: String? = null)
+data class SpellExample(val name: String? )

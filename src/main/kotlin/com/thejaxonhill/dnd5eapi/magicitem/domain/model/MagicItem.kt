@@ -17,4 +17,4 @@ data class MagicItem(
     val updatedAt: LocalDateTime,
 )
 
-data class MagicItemExample(val name: String? = null)
+data class MagicItemExample(val name: String?)

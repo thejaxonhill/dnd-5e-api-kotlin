@@ -12,4 +12,4 @@ data class Feat(
     val updatedAt: LocalDateTime
 )
 
-data class FeatExample(val name: String? = null)
+data class FeatExample(val name: String?)

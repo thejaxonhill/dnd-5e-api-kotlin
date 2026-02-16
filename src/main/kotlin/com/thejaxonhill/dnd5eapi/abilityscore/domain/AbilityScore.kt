@@ -14,4 +14,4 @@ class AbilityScore(
     val updatedAt: LocalDateTime? = null
 )
 
-data class AbilityScoreExample(val name: String)
+data class AbilityScoreExample(val name: String?)

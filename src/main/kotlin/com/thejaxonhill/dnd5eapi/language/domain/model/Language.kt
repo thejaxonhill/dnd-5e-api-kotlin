@@ -14,4 +14,4 @@ data class Language(
     val updatedAt: LocalDateTime,
 )
 
-data class LanguageExample(val name: String? = null)
+data class LanguageExample(val name: String?)

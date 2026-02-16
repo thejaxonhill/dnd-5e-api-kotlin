@@ -12,4 +12,4 @@ class Alignment(
     val updatedAt: LocalDateTime? = null
 )
 
-data class AlignmentExample(val name: String, val abbreviation: String)
+data class AlignmentExample(val name: String?, val abbreviation: String?)

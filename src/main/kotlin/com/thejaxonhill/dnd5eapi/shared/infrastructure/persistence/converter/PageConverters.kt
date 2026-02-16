@@ -5,7 +5,7 @@ import org.springframework.data.domain.PageRequest
 import org.springframework.data.domain.Pageable
 import org.springframework.data.domain.Sort
 
-fun Page.toPageable(): Pageable = PageRequest.of(page ?: 0, size ?: 10, sort?.toSort())
+fun Page.toPageable(): Pageable = PageRequest.of(page ?: 0, size ?: 10, sort?.toSort() ?: Sort.unsorted())
 
 fun Pageable.toPage(): Page = Page(
     pageNumber,

@@ -23,7 +23,7 @@ data class CharacterClass(
     val updatedAt: LocalDateTime? = null,
 )
 
-data class CharacterClassExample(val name: String? = null)
+data class CharacterClassExample(val name: String?)
 
 data class Spellcasting(
     val info: List<SpellcastingInfo>,

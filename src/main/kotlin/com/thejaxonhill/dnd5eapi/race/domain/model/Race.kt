@@ -26,4 +26,4 @@ data class Race(
     val updatedAt: LocalDateTime,
 )
 
-data class RaceExample(val name: String? = null)
+data class RaceExample(val name: String?)

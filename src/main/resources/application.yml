@@ -25,3 +25,7 @@ spring:
       enabled: true
   jackson:
     default-property-inclusion: non_null
+springdoc:
+  swagger-ui:
+    tagsSorter: alpha
+    operationsSorter: alpha

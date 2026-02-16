@@ -21,4 +21,4 @@ data class Level(
     val updatedAt: LocalDateTime,
 )
 
-data class LevelExample(val level: Int? = null)
+data class LevelExample(val level: Int?)

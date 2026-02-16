@@ -14,4 +14,4 @@ data class Proficiency(
     val updatedAt: String,
 )
 
-data class ProficiencyExample(val name: String? = null)
+data class ProficiencyExample(val name: String?)

@@ -2,7 +2,6 @@ package com.thejaxonhill.dnd5eapi.rule.domain.model
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import java.time.LocalDateTime
-import java.time.LocalDateTime
 
 data class Rule(
     val id: String? = null,
@@ -14,4 +13,4 @@ data class Rule(
     val updatedAt: LocalDateTime,
 )
 
-data class RuleExample(val name: String? = null)
+data class RuleExample(val name: String?)

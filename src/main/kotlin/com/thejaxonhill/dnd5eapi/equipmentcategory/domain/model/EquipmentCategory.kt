@@ -12,4 +12,4 @@ data class EquipmentCategory(
     val updatedAt: LocalDateTime
 )
 
-data class EquipmentCategoryExample(val name: String? = null)
+data class EquipmentCategoryExample(val name: String?)

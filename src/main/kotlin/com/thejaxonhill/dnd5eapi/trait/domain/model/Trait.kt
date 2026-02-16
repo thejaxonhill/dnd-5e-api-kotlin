@@ -20,4 +20,4 @@ data class Trait(
     val updatedAt: LocalDateTime,
 )
 
-data class TraitExample(val name: String? = null)
+data class TraitExample(val name: String?)

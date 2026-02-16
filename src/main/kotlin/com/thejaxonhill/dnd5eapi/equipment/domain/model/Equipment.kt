@@ -36,4 +36,4 @@ data class Equipment(
     val updatedAt: LocalDateTime
 )
 
-data class EquipmentExample(val name: String? = null)
+data class EquipmentExample(val name: String?)

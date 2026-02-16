@@ -19,4 +19,4 @@ data class Subrace(
     val updatedAt: LocalDateTime,
 )
 
-data class SubraceExample(val name: String? = null)
+data class SubraceExample(val name: String?)

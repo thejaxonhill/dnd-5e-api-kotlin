@@ -20,4 +20,4 @@ data class Feature(
     val updatedAt: LocalDateTime
 )
 
-data class FeatureExample(val name: String? = null)
+data class FeatureExample(val name: String?)

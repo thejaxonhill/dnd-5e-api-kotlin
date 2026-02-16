@@ -13,4 +13,4 @@ data class Skill(
     val updatedAt: LocalDateTime,
 )
 
-data class SkillExample(val name: String? = null)
+data class SkillExample(val name: String?)

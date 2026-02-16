@@ -11,4 +11,4 @@ data class MagicSchool(
     val updatedAt: LocalDateTime,
 )
 
-data class MagicSchoolExample(val name: String? = null)
+data class MagicSchoolExample(val name: String? )

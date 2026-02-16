@@ -3,7 +3,6 @@ package com.thejaxonhill.dnd5eapi.background.domain.model
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 import java.time.LocalDateTime
-import java.time.LocalDateTime
 
 class Background(
     val id: String? = null,
@@ -32,4 +31,4 @@ data class StartingEquipment(
     val quantity: Int,
 )
 
-data class BackgroundExample(val name: String? = null)
+data class BackgroundExample(val name: String?)

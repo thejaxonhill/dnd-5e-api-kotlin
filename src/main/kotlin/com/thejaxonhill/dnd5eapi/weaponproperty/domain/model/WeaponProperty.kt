@@ -11,4 +11,4 @@ data class WeaponProperty(
     val updatedAt: LocalDateTime,
 )
 
-data class WeaponPropertyExample(val name: String? = null)
+data class WeaponPropertyExample(val name: String?)

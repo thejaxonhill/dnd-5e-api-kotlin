@@ -41,4 +41,4 @@ data class Monster(
     val updatedAt: LocalDateTime,
 )
 
-data class MonsterExample(val name: String? = null)
+data class MonsterExample(val name: String?)

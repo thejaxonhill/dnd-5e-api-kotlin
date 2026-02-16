@@ -18,4 +18,4 @@ data class Subclass(
     val updatedAt: LocalDateTime,
 )
 
-data class SubclassExample(val name: String? = null)
+data class SubclassExample(val name: String?)

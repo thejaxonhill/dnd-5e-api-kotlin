@@ -9,4 +9,4 @@ data class RuleSection(
     val updatedAt: String,
 )
 
-data class RuleSectionExample(val name: String? = null)
+data class RuleSectionExample(val name: String?)

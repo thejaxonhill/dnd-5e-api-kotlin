@@ -11,4 +11,4 @@ data class DamageType(
     val updatedAt: LocalDateTime
 )
 
-data class DamageTypeExample(val name: String? = null)
+data class DamageTypeExample(val name: String?)

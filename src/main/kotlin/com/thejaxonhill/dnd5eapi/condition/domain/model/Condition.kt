@@ -11,4 +11,4 @@ data class Condition(
     val updatedAt: LocalDateTime
 )
 
-data class ConditionExample(val name: String? = null)
+data class ConditionExample(val name: String?)
