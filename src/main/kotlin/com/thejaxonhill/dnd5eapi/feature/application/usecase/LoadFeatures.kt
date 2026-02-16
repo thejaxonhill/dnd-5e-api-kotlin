@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.feature.application.usecase
 
 import com.thejaxonhill.dnd5eapi.feature.application.dto.toView
-import com.thejaxonhill.dnd5eapi.feature.domain.model.FeatureExample
-import com.thejaxonhill.dnd5eapi.feature.domain.repository.FeatureRepository
+import com.thejaxonhill.dnd5eapi.feature.domain.FeatureExample
+import com.thejaxonhill.dnd5eapi.feature.domain.FeatureRepository
 import com.thejaxonhill.dnd5eapi.shared.application.stereotype.UseCase
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 

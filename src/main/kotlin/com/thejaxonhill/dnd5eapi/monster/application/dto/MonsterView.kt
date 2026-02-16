@@ -1,6 +1,14 @@
 package com.thejaxonhill.dnd5eapi.monster.application.dto
 
-import com.thejaxonhill.dnd5eapi.monster.domain.model.*
+import com.thejaxonhill.dnd5eapi.monster.domain.LegendaryAction
+import com.thejaxonhill.dnd5eapi.monster.domain.Monster
+import com.thejaxonhill.dnd5eapi.monster.domain.MonsterAction
+import com.thejaxonhill.dnd5eapi.monster.domain.MonsterArmorClass
+import com.thejaxonhill.dnd5eapi.monster.domain.MonsterProficiency
+import com.thejaxonhill.dnd5eapi.monster.domain.Reaction
+import com.thejaxonhill.dnd5eapi.monster.domain.Sense
+import com.thejaxonhill.dnd5eapi.monster.domain.SpecialAbility
+import com.thejaxonhill.dnd5eapi.monster.domain.Speed
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 
 data class MonsterView(

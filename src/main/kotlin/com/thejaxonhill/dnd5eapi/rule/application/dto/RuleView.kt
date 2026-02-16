@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.rule.application.dto
 
-import com.thejaxonhill.dnd5eapi.rule.domain.model.Rule
+import com.thejaxonhill.dnd5eapi.rule.domain.Rule
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 
 data class RuleView(

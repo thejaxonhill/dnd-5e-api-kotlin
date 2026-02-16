@@ -5,7 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toP
 import com.thejaxonhill.dnd5eapi.spell.application.dto.SpellView
 import com.thejaxonhill.dnd5eapi.spell.application.usecase.LoadSpellByIndex
 import com.thejaxonhill.dnd5eapi.spell.application.usecase.LoadSpells
-import com.thejaxonhill.dnd5eapi.spell.domain.model.SpellExample
+import com.thejaxonhill.dnd5eapi.spell.domain.SpellExample
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.tags.Tag
 import org.springdoc.core.annotations.ParameterObject

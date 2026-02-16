@@ -2,9 +2,9 @@ package com.thejaxonhill.dnd5eapi.spell.application.dto
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.AreaOfEffect
-import com.thejaxonhill.dnd5eapi.spell.domain.model.Spell
-import com.thejaxonhill.dnd5eapi.spell.domain.model.SpellDamage
-import com.thejaxonhill.dnd5eapi.spell.domain.model.SpellDc
+import com.thejaxonhill.dnd5eapi.spell.domain.Spell
+import com.thejaxonhill.dnd5eapi.spell.domain.Damage
+import com.thejaxonhill.dnd5eapi.spell.domain.SpellDc
 
 data class SpellView(
     val areaOfEffect: AreaOfEffect? = null,
@@ -13,7 +13,7 @@ data class SpellView(
     val classes: List<ApiReference>,
     val components: List<String>,
     val concentration: Boolean,
-    val damage: SpellDamage? = null,
+    val damage: Damage? = null,
     val dc: SpellDc? = null,
     val desc: List<String>,
     val duration: String,

@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.equipment.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.equipment.application.dto.EquipmentView
 import com.thejaxonhill.dnd5eapi.equipment.application.usecase.LoadAllEquipment
 import com.thejaxonhill.dnd5eapi.equipment.application.usecase.LoadEquipmentByIndex
-import com.thejaxonhill.dnd5eapi.equipment.domain.model.EquipmentExample
+import com.thejaxonhill.dnd5eapi.equipment.domain.EquipmentExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

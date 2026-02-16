@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.magicschool.application.dto
 
-import com.thejaxonhill.dnd5eapi.magicschool.domain.model.MagicSchool
+import com.thejaxonhill.dnd5eapi.magicschool.domain.MagicSchool
 
 data class MagicSchoolView(
     val desc: String,

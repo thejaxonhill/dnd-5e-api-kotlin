@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.condition.application.dto
 
-import com.thejaxonhill.dnd5eapi.condition.domain.model.Condition
+import com.thejaxonhill.dnd5eapi.condition.domain.Condition
 
 data class ConditionView(
     val index: String,

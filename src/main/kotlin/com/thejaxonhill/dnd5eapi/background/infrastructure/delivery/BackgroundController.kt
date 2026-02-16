@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.background.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.background.application.dto.BackgroundView
 import com.thejaxonhill.dnd5eapi.background.application.usecase.LoadBackgroundByIndex
 import com.thejaxonhill.dnd5eapi.background.application.usecase.LoadBackgrounds
-import com.thejaxonhill.dnd5eapi.background.domain.model.BackgroundExample
+import com.thejaxonhill.dnd5eapi.background.domain.BackgroundExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

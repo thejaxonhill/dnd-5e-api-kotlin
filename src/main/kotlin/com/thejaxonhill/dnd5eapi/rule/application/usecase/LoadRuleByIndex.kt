@@ -1,7 +1,7 @@
 package com.thejaxonhill.dnd5eapi.rule.application.usecase
 
 import com.thejaxonhill.dnd5eapi.rule.application.dto.toView
-import com.thejaxonhill.dnd5eapi.rule.domain.repository.RuleRepository
+import com.thejaxonhill.dnd5eapi.rule.domain.RuleRepository
 import com.thejaxonhill.dnd5eapi.shared.application.stereotype.UseCase
 
 @UseCase

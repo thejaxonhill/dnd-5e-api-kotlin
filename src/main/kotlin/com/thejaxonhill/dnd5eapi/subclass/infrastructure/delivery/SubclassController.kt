@@ -5,7 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toP
 import com.thejaxonhill.dnd5eapi.subclass.application.dto.SubclassView
 import com.thejaxonhill.dnd5eapi.subclass.application.usecase.LoadSubclassByIndex
 import com.thejaxonhill.dnd5eapi.subclass.application.usecase.LoadSubclasses
-import com.thejaxonhill.dnd5eapi.subclass.domain.model.SubclassExample
+import com.thejaxonhill.dnd5eapi.subclass.domain.SubclassExample
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.tags.Tag
 import org.springdoc.core.annotations.ParameterObject

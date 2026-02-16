@@ -1,7 +1,7 @@
 package com.thejaxonhill.dnd5eapi.subclass.infrastructure.persistence
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
-import com.thejaxonhill.dnd5eapi.subclass.domain.model.SubclassSpell
+import com.thejaxonhill.dnd5eapi.subclass.domain.Spell
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import org.springframework.data.mongodb.core.mapping.Field
@@ -16,7 +16,7 @@ class SubclassDocument(
     var desc: List<String>? = null,
     var index: String? = null,
     var name: String? = null,
-    var spells: List<SubclassSpell>? = null,
+    var spells: List<Spell>? = null,
     var subclassFlavor: String? = null,
     var subclassLevels: String? = null,
     var url: String? = null,

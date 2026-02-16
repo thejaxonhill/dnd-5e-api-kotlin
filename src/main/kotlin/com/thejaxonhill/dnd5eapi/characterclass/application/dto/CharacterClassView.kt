@@ -1,9 +1,9 @@
 package com.thejaxonhill.dnd5eapi.characterclass.application.dto
 
-import com.thejaxonhill.dnd5eapi.characterclass.domain.model.CharacterClass
-import com.thejaxonhill.dnd5eapi.characterclass.domain.model.Spellcasting
-import com.thejaxonhill.dnd5eapi.characterclass.domain.model.EquipmentQuantity
-import com.thejaxonhill.dnd5eapi.characterclass.domain.model.MultiClassing
+import com.thejaxonhill.dnd5eapi.characterclass.domain.CharacterClass
+import com.thejaxonhill.dnd5eapi.characterclass.domain.Spellcasting
+import com.thejaxonhill.dnd5eapi.characterclass.domain.EquipmentQuantity
+import com.thejaxonhill.dnd5eapi.characterclass.domain.MultiClassing
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 

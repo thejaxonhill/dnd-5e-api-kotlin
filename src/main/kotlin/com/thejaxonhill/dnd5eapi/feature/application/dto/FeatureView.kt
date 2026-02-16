@@ -1,7 +1,7 @@
 package com.thejaxonhill.dnd5eapi.feature.application.dto
 
-import com.thejaxonhill.dnd5eapi.feature.domain.model.Feature
-import com.thejaxonhill.dnd5eapi.feature.domain.model.FeatureSpecific
+import com.thejaxonhill.dnd5eapi.feature.domain.Feature
+import com.thejaxonhill.dnd5eapi.feature.domain.FeatureSpecific
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Prerequisite
 

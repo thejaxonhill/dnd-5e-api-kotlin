@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.rulesection.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.rulesection.domain.model.RuleSection
-import com.thejaxonhill.dnd5eapi.rulesection.domain.model.RuleSectionExample
-import com.thejaxonhill.dnd5eapi.rulesection.domain.repository.RuleSectionRepository
+import com.thejaxonhill.dnd5eapi.rulesection.domain.RuleSection
+import com.thejaxonhill.dnd5eapi.rulesection.domain.RuleSectionExample
+import com.thejaxonhill.dnd5eapi.rulesection.domain.RuleSectionRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

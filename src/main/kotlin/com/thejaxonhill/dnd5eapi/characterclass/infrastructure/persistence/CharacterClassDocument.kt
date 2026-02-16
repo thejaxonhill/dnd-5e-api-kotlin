@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.characterclass.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.characterclass.domain.model.EquipmentQuantity
-import com.thejaxonhill.dnd5eapi.characterclass.domain.model.MultiClassing
-import com.thejaxonhill.dnd5eapi.characterclass.domain.model.Spellcasting
+import com.thejaxonhill.dnd5eapi.characterclass.domain.EquipmentQuantity
+import com.thejaxonhill.dnd5eapi.characterclass.domain.MultiClassing
+import com.thejaxonhill.dnd5eapi.characterclass.domain.Spellcasting
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 import org.springframework.data.annotation.Id

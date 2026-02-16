@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.alignment.application.dto
 
-import com.thejaxonhill.dnd5eapi.alignment.domain.model.Alignment
+import com.thejaxonhill.dnd5eapi.alignment.domain.Alignment
 
 data class AlignmentView(
     val index: String,

@@ -5,7 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toP
 import com.thejaxonhill.dnd5eapi.weaponproperty.application.dto.WeaponPropertyView
 import com.thejaxonhill.dnd5eapi.weaponproperty.application.usecase.LoadWeaponProperties
 import com.thejaxonhill.dnd5eapi.weaponproperty.application.usecase.LoadWeaponPropertyByIndex
-import com.thejaxonhill.dnd5eapi.weaponproperty.domain.model.WeaponPropertyExample
+import com.thejaxonhill.dnd5eapi.weaponproperty.domain.WeaponPropertyExample
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.tags.Tag
 import org.springdoc.core.annotations.ParameterObject

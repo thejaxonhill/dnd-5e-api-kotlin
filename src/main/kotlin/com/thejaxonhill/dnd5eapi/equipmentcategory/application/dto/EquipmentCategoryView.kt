@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.equipmentcategory.application.dto
 
-import com.thejaxonhill.dnd5eapi.equipmentcategory.domain.model.EquipmentCategory
+import com.thejaxonhill.dnd5eapi.equipmentcategory.domain.EquipmentCategory
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 
 data class EquipmentCategoryView(

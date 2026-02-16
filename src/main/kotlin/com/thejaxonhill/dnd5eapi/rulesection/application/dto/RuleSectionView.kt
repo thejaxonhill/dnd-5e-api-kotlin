@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.rulesection.application.dto
 
-import com.thejaxonhill.dnd5eapi.rulesection.domain.model.RuleSection
+import com.thejaxonhill.dnd5eapi.rulesection.domain.RuleSection
 
 data class RuleSectionView(
     val desc: String,

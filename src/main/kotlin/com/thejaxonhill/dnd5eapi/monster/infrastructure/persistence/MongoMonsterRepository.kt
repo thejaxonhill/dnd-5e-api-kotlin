@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.monster.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.monster.domain.model.Monster
-import com.thejaxonhill.dnd5eapi.monster.domain.model.MonsterExample
-import com.thejaxonhill.dnd5eapi.monster.domain.repository.MonsterRepository
+import com.thejaxonhill.dnd5eapi.monster.domain.Monster
+import com.thejaxonhill.dnd5eapi.monster.domain.MonsterExample
+import com.thejaxonhill.dnd5eapi.monster.domain.MonsterRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

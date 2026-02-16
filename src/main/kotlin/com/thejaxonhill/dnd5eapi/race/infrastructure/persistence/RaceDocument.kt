@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.race.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.race.domain.model.RaceAbilityBonus
+import com.thejaxonhill.dnd5eapi.race.domain.AbilityBonus
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 import org.springframework.data.annotation.Id
@@ -12,7 +12,7 @@ class RaceDocument(
     @Id
     var id: String? = null,
     var abilityBonusOptions: Choice? = null,
-    var abilityBonuses: List<RaceAbilityBonus>? = null,
+    var abilityBonuses: List<AbilityBonus>? = null,
     var age: String? = null,
     var alignment: String? = null,
     var index: String? = null,

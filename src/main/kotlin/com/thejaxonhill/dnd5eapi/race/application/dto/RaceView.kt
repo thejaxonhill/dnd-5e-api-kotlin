@@ -1,13 +1,13 @@
 package com.thejaxonhill.dnd5eapi.race.application.dto
 
-import com.thejaxonhill.dnd5eapi.race.domain.model.Race
-import com.thejaxonhill.dnd5eapi.race.domain.model.RaceAbilityBonus
+import com.thejaxonhill.dnd5eapi.race.domain.Race
+import com.thejaxonhill.dnd5eapi.race.domain.AbilityBonus
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 
 data class RaceView(
     val abilityBonusOptions: Choice? = null,
-    val abilityBonuses: List<RaceAbilityBonus>,
+    val abilityBonuses: List<AbilityBonus>,
     val age: String,
     val alignment: String,
     val index: String,

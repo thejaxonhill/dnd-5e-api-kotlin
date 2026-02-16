@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.condition.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.condition.domain.model.Condition
-import com.thejaxonhill.dnd5eapi.condition.domain.model.ConditionExample
-import com.thejaxonhill.dnd5eapi.condition.domain.repository.ConditionRepository
+import com.thejaxonhill.dnd5eapi.condition.domain.Condition
+import com.thejaxonhill.dnd5eapi.condition.domain.ConditionExample
+import com.thejaxonhill.dnd5eapi.condition.domain.ConditionRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.damagetype.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.damagetype.application.dto.DamageTypeView
 import com.thejaxonhill.dnd5eapi.damagetype.application.usecase.LoadDamageTypeByIndex
 import com.thejaxonhill.dnd5eapi.damagetype.application.usecase.LoadDamageTypes
-import com.thejaxonhill.dnd5eapi.damagetype.domain.model.DamageTypeExample
+import com.thejaxonhill.dnd5eapi.damagetype.domain.DamageTypeExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

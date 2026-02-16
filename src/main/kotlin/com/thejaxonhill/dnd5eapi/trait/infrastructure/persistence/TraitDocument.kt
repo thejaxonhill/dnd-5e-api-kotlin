@@ -2,8 +2,8 @@ package com.thejaxonhill.dnd5eapi.trait.infrastructure.persistence
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
-import com.thejaxonhill.dnd5eapi.trait.domain.model.TraitProficiency
-import com.thejaxonhill.dnd5eapi.trait.domain.model.TraitSpecific
+import com.thejaxonhill.dnd5eapi.trait.domain.TraitProficiency
+import com.thejaxonhill.dnd5eapi.trait.domain.TraitSpecific
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime

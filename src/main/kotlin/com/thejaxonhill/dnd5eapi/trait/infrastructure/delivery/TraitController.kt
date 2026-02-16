@@ -5,7 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toP
 import com.thejaxonhill.dnd5eapi.trait.application.dto.TraitView
 import com.thejaxonhill.dnd5eapi.trait.application.usecase.LoadTraitByIndex
 import com.thejaxonhill.dnd5eapi.trait.application.usecase.LoadTraits
-import com.thejaxonhill.dnd5eapi.trait.domain.model.TraitExample
+import com.thejaxonhill.dnd5eapi.trait.domain.TraitExample
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.tags.Tag
 import org.springdoc.core.annotations.ParameterObject

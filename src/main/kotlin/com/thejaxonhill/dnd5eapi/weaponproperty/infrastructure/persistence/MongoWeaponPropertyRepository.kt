@@ -4,9 +4,9 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPagedModel
-import com.thejaxonhill.dnd5eapi.weaponproperty.domain.model.WeaponProperty
-import com.thejaxonhill.dnd5eapi.weaponproperty.domain.model.WeaponPropertyExample
-import com.thejaxonhill.dnd5eapi.weaponproperty.domain.repository.WeaponPropertyRepository
+import com.thejaxonhill.dnd5eapi.weaponproperty.domain.WeaponProperty
+import com.thejaxonhill.dnd5eapi.weaponproperty.domain.WeaponPropertyExample
+import com.thejaxonhill.dnd5eapi.weaponproperty.domain.WeaponPropertyRepository
 import org.springframework.data.domain.Example
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Component

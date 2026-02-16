@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.proficiency.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.proficiency.domain.model.Proficiency
-import com.thejaxonhill.dnd5eapi.proficiency.domain.model.ProficiencyExample
-import com.thejaxonhill.dnd5eapi.proficiency.domain.repository.ProficiencyRepository
+import com.thejaxonhill.dnd5eapi.proficiency.domain.Proficiency
+import com.thejaxonhill.dnd5eapi.proficiency.domain.ProficiencyExample
+import com.thejaxonhill.dnd5eapi.proficiency.domain.ProficiencyRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

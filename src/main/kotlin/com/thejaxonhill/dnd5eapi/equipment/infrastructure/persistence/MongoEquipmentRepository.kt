@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.equipment.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.equipment.domain.model.Equipment
-import com.thejaxonhill.dnd5eapi.equipment.domain.model.EquipmentExample
-import com.thejaxonhill.dnd5eapi.equipment.domain.repository.EquipmentRepository
+import com.thejaxonhill.dnd5eapi.equipment.domain.Equipment
+import com.thejaxonhill.dnd5eapi.equipment.domain.EquipmentExample
+import com.thejaxonhill.dnd5eapi.equipment.domain.EquipmentRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

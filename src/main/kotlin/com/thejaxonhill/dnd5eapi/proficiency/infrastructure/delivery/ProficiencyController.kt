@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.proficiency.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.proficiency.application.dto.ProficiencyView
 import com.thejaxonhill.dnd5eapi.proficiency.application.usecase.LoadProficiencyByIndex
 import com.thejaxonhill.dnd5eapi.proficiency.application.usecase.LoadProficiencies
-import com.thejaxonhill.dnd5eapi.proficiency.domain.model.ProficiencyExample
+import com.thejaxonhill.dnd5eapi.proficiency.domain.ProficiencyExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

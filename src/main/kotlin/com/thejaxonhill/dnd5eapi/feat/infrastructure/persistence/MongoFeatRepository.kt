@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.feat.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.feat.domain.model.Feat
-import com.thejaxonhill.dnd5eapi.feat.domain.model.FeatExample
-import com.thejaxonhill.dnd5eapi.feat.domain.repository.FeatRepository
+import com.thejaxonhill.dnd5eapi.feat.domain.Feat
+import com.thejaxonhill.dnd5eapi.feat.domain.FeatExample
+import com.thejaxonhill.dnd5eapi.feat.domain.FeatRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

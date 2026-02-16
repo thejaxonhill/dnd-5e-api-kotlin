@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.magicschool.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.magicschool.application.dto.MagicSchoolView
 import com.thejaxonhill.dnd5eapi.magicschool.application.usecase.LoadMagicSchoolByIndex
 import com.thejaxonhill.dnd5eapi.magicschool.application.usecase.LoadMagicSchools
-import com.thejaxonhill.dnd5eapi.magicschool.domain.model.MagicSchoolExample
+import com.thejaxonhill.dnd5eapi.magicschool.domain.MagicSchoolExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

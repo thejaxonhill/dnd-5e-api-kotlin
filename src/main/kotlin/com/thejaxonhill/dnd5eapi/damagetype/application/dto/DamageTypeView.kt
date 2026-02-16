@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.damagetype.application.dto
 
-import com.thejaxonhill.dnd5eapi.damagetype.domain.model.DamageType
+import com.thejaxonhill.dnd5eapi.damagetype.domain.DamageType
 
 data class DamageTypeView(
     val index: String,

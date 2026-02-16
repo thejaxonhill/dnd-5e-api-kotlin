@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.monster.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.monster.application.dto.MonsterView
 import com.thejaxonhill.dnd5eapi.monster.application.usecase.LoadMonsterByIndex
 import com.thejaxonhill.dnd5eapi.monster.application.usecase.LoadMonsters
-import com.thejaxonhill.dnd5eapi.monster.domain.model.MonsterExample
+import com.thejaxonhill.dnd5eapi.monster.domain.MonsterExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

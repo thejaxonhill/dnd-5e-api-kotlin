@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.characterclass.application.usecase
 
 import com.thejaxonhill.dnd5eapi.characterclass.application.dto.toView
-import com.thejaxonhill.dnd5eapi.characterclass.domain.model.CharacterClassExample
-import com.thejaxonhill.dnd5eapi.characterclass.domain.repository.CharacterClassRepository
+import com.thejaxonhill.dnd5eapi.characterclass.domain.CharacterClassExample
+import com.thejaxonhill.dnd5eapi.characterclass.domain.CharacterClassRepository
 import com.thejaxonhill.dnd5eapi.shared.application.stereotype.UseCase
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 

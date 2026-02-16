@@ -2,9 +2,9 @@ package com.thejaxonhill.dnd5eapi.trait.application.dto
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
-import com.thejaxonhill.dnd5eapi.trait.domain.model.Trait
-import com.thejaxonhill.dnd5eapi.trait.domain.model.TraitProficiency
-import com.thejaxonhill.dnd5eapi.trait.domain.model.TraitSpecific
+import com.thejaxonhill.dnd5eapi.trait.domain.Trait
+import com.thejaxonhill.dnd5eapi.trait.domain.TraitProficiency
+import com.thejaxonhill.dnd5eapi.trait.domain.TraitSpecific
 
 data class TraitView(
     val desc: List<String>,

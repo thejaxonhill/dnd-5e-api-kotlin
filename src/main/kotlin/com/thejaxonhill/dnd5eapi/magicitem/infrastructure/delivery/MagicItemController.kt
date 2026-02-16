@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.magicitem.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.magicitem.application.dto.MagicItemView
 import com.thejaxonhill.dnd5eapi.magicitem.application.usecase.LoadMagicItemByIndex
 import com.thejaxonhill.dnd5eapi.magicitem.application.usecase.LoadMagicItems
-import com.thejaxonhill.dnd5eapi.magicitem.domain.model.MagicItemExample
+import com.thejaxonhill.dnd5eapi.magicitem.domain.MagicItemExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

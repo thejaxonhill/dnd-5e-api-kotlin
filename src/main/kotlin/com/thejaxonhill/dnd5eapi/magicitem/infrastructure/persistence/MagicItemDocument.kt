@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.magicitem.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.magicitem.domain.model.Rarity
+import com.thejaxonhill.dnd5eapi.magicitem.domain.Rarity
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document

@@ -5,7 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toP
 import com.thejaxonhill.dnd5eapi.skill.application.dto.SkillView
 import com.thejaxonhill.dnd5eapi.skill.application.usecase.LoadSkillByIndex
 import com.thejaxonhill.dnd5eapi.skill.application.usecase.LoadSkills
-import com.thejaxonhill.dnd5eapi.skill.domain.model.SkillExample
+import com.thejaxonhill.dnd5eapi.skill.domain.SkillExample
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.tags.Tag
 import org.springdoc.core.annotations.ParameterObject

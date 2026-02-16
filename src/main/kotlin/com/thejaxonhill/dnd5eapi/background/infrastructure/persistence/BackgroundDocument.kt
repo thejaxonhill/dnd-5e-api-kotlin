@@ -1,7 +1,7 @@
 package com.thejaxonhill.dnd5eapi.background.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.background.domain.model.Feature
-import com.thejaxonhill.dnd5eapi.background.domain.model.StartingEquipment
+import com.thejaxonhill.dnd5eapi.background.domain.Feature
+import com.thejaxonhill.dnd5eapi.background.domain.StartingEquipment
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
 import org.springframework.data.annotation.Id

@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.feat.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.feat.domain.model.FeatPrerequisite
+import com.thejaxonhill.dnd5eapi.feat.domain.FeatPrerequisite
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime

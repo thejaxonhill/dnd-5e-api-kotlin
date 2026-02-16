@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.level.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.level.domain.model.Level
-import com.thejaxonhill.dnd5eapi.level.domain.model.LevelExample
-import com.thejaxonhill.dnd5eapi.level.domain.repository.LevelRepository
+import com.thejaxonhill.dnd5eapi.level.domain.Level
+import com.thejaxonhill.dnd5eapi.level.domain.LevelExample
+import com.thejaxonhill.dnd5eapi.level.domain.LevelRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

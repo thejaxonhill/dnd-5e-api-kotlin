@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.background.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.background.domain.model.Background
-import com.thejaxonhill.dnd5eapi.background.domain.model.BackgroundExample
-import com.thejaxonhill.dnd5eapi.background.domain.repository.BackgroundRepository
+import com.thejaxonhill.dnd5eapi.background.domain.Background
+import com.thejaxonhill.dnd5eapi.background.domain.BackgroundExample
+import com.thejaxonhill.dnd5eapi.background.domain.BackgroundRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

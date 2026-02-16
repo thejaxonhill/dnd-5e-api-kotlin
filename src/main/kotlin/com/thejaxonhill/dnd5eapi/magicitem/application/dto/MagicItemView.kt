@@ -1,7 +1,7 @@
 package com.thejaxonhill.dnd5eapi.magicitem.application.dto
 
-import com.thejaxonhill.dnd5eapi.magicitem.domain.model.MagicItem
-import com.thejaxonhill.dnd5eapi.magicitem.domain.model.Rarity
+import com.thejaxonhill.dnd5eapi.magicitem.domain.MagicItem
+import com.thejaxonhill.dnd5eapi.magicitem.domain.Rarity
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 
 data class MagicItemView(

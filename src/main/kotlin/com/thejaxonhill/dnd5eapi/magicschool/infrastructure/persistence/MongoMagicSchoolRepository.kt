@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.magicschool.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.magicschool.domain.model.MagicSchool
-import com.thejaxonhill.dnd5eapi.magicschool.domain.model.MagicSchoolExample
-import com.thejaxonhill.dnd5eapi.magicschool.domain.repository.MagicSchoolRepository
+import com.thejaxonhill.dnd5eapi.magicschool.domain.MagicSchool
+import com.thejaxonhill.dnd5eapi.magicschool.domain.MagicSchoolExample
+import com.thejaxonhill.dnd5eapi.magicschool.domain.MagicSchoolRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

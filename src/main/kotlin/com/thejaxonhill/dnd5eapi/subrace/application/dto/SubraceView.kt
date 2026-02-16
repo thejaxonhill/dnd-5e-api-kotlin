@@ -2,11 +2,11 @@ package com.thejaxonhill.dnd5eapi.subrace.application.dto
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Choice
-import com.thejaxonhill.dnd5eapi.subrace.domain.model.Subrace
-import com.thejaxonhill.dnd5eapi.subrace.domain.model.SubraceAbilityBonus
+import com.thejaxonhill.dnd5eapi.subrace.domain.Subrace
+import com.thejaxonhill.dnd5eapi.subrace.domain.AbilityBonus
 
 data class SubraceView(
-    val abilityBonuses: List<SubraceAbilityBonus>,
+    val abilityBonuses: List<AbilityBonus>,
     val desc: String,
     val index: String,
     val languages: List<ApiReference>? = null,

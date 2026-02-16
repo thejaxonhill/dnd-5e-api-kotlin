@@ -2,8 +2,8 @@ package com.thejaxonhill.dnd5eapi.spell.infrastructure.persistence
 
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.AreaOfEffect
-import com.thejaxonhill.dnd5eapi.spell.domain.model.SpellDamage
-import com.thejaxonhill.dnd5eapi.spell.domain.model.SpellDc
+import com.thejaxonhill.dnd5eapi.spell.domain.Damage
+import com.thejaxonhill.dnd5eapi.spell.domain.SpellDc
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime
@@ -18,7 +18,7 @@ class SpellDocument(
     var classes: List<ApiReference>? = null,
     var components: List<String>? = null,
     var concentration: Boolean? = null,
-    var damage: SpellDamage? = null,
+    var damage: Damage? = null,
     var dc: SpellDc? = null,
     var desc: List<String>? = null,
     var duration: String? = null,

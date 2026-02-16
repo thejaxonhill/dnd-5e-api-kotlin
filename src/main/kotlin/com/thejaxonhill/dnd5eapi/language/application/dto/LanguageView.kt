@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.language.application.dto
 
-import com.thejaxonhill.dnd5eapi.language.domain.model.Language
+import com.thejaxonhill.dnd5eapi.language.domain.Language
 
 data class LanguageView(
     val desc: String? = null,

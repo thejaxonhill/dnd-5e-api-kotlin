@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.race.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.race.domain.model.Race
-import com.thejaxonhill.dnd5eapi.race.domain.model.RaceExample
-import com.thejaxonhill.dnd5eapi.race.domain.repository.RaceRepository
+import com.thejaxonhill.dnd5eapi.race.domain.Race
+import com.thejaxonhill.dnd5eapi.race.domain.RaceExample
+import com.thejaxonhill.dnd5eapi.race.domain.RaceRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

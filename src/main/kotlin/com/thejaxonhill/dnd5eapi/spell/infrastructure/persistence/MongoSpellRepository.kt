@@ -4,9 +4,9 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPagedModel
-import com.thejaxonhill.dnd5eapi.spell.domain.model.Spell
-import com.thejaxonhill.dnd5eapi.spell.domain.model.SpellExample
-import com.thejaxonhill.dnd5eapi.spell.domain.repository.SpellRepository
+import com.thejaxonhill.dnd5eapi.spell.domain.Spell
+import com.thejaxonhill.dnd5eapi.spell.domain.SpellExample
+import com.thejaxonhill.dnd5eapi.spell.domain.SpellRepository
 import org.springframework.data.domain.Example
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Component

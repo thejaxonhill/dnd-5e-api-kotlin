@@ -4,9 +4,9 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPagedModel
-import com.thejaxonhill.dnd5eapi.trait.domain.model.Trait
-import com.thejaxonhill.dnd5eapi.trait.domain.model.TraitExample
-import com.thejaxonhill.dnd5eapi.trait.domain.repository.TraitRepository
+import com.thejaxonhill.dnd5eapi.trait.domain.Trait
+import com.thejaxonhill.dnd5eapi.trait.domain.TraitExample
+import com.thejaxonhill.dnd5eapi.trait.domain.TraitRepository
 import org.springframework.data.domain.Example
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Component

@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.language.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.language.domain.model.Language
-import com.thejaxonhill.dnd5eapi.language.domain.model.LanguageExample
-import com.thejaxonhill.dnd5eapi.language.domain.repository.LanguageRepository
+import com.thejaxonhill.dnd5eapi.language.domain.Language
+import com.thejaxonhill.dnd5eapi.language.domain.LanguageExample
+import com.thejaxonhill.dnd5eapi.language.domain.LanguageRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

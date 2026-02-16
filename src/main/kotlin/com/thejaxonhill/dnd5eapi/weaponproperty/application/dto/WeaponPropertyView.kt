@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.weaponproperty.application.dto
 
-import com.thejaxonhill.dnd5eapi.weaponproperty.domain.model.WeaponProperty
+import com.thejaxonhill.dnd5eapi.weaponproperty.domain.WeaponProperty
 
 data class WeaponPropertyView(
     val desc: List<String>,

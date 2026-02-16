@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.magicitem.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.magicitem.domain.model.MagicItem
-import com.thejaxonhill.dnd5eapi.magicitem.domain.model.MagicItemExample
-import com.thejaxonhill.dnd5eapi.magicitem.domain.repository.MagicItemRepository
+import com.thejaxonhill.dnd5eapi.magicitem.domain.MagicItem
+import com.thejaxonhill.dnd5eapi.magicitem.domain.MagicItemExample
+import com.thejaxonhill.dnd5eapi.magicitem.domain.MagicItemRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.rule.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.rule.application.dto.RuleView
 import com.thejaxonhill.dnd5eapi.rule.application.usecase.LoadRuleByIndex
 import com.thejaxonhill.dnd5eapi.rule.application.usecase.LoadRules
-import com.thejaxonhill.dnd5eapi.rule.domain.model.RuleExample
+import com.thejaxonhill.dnd5eapi.rule.domain.RuleExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

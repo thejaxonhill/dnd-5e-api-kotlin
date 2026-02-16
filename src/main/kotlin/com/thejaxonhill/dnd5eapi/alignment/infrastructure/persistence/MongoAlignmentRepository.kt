@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.alignment.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.alignment.domain.model.Alignment
-import com.thejaxonhill.dnd5eapi.alignment.domain.model.AlignmentExample
-import com.thejaxonhill.dnd5eapi.alignment.domain.repository.AlignmentRepository
+import com.thejaxonhill.dnd5eapi.alignment.domain.Alignment
+import com.thejaxonhill.dnd5eapi.alignment.domain.AlignmentExample
+import com.thejaxonhill.dnd5eapi.alignment.domain.AlignmentRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

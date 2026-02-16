@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.level.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.level.domain.model.ClassSpecific
-import com.thejaxonhill.dnd5eapi.level.domain.model.SpellcastingSlots
-import com.thejaxonhill.dnd5eapi.level.domain.model.SubclassSpecific
+import com.thejaxonhill.dnd5eapi.level.domain.ClassSpecific
+import com.thejaxonhill.dnd5eapi.level.domain.SpellcastingSlots
+import com.thejaxonhill.dnd5eapi.level.domain.SubclassSpecific
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document

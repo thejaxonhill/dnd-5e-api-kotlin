@@ -1,6 +1,13 @@
 package com.thejaxonhill.dnd5eapi.equipment.application.dto
 
-import com.thejaxonhill.dnd5eapi.equipment.domain.model.*
+import com.thejaxonhill.dnd5eapi.equipment.domain.ArmorClass
+import com.thejaxonhill.dnd5eapi.equipment.domain.Content
+import com.thejaxonhill.dnd5eapi.equipment.domain.Cost
+import com.thejaxonhill.dnd5eapi.equipment.domain.Equipment
+import com.thejaxonhill.dnd5eapi.equipment.domain.Range
+import com.thejaxonhill.dnd5eapi.equipment.domain.Speed
+import com.thejaxonhill.dnd5eapi.equipment.domain.ThrowRange
+import com.thejaxonhill.dnd5eapi.equipment.domain.TwoHandedDamage
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Damage
 

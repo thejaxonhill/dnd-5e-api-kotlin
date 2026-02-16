@@ -1,7 +1,7 @@
 package com.thejaxonhill.dnd5eapi.feat.application.dto
 
-import com.thejaxonhill.dnd5eapi.feat.domain.model.Feat
-import com.thejaxonhill.dnd5eapi.feat.domain.model.FeatPrerequisite
+import com.thejaxonhill.dnd5eapi.feat.domain.Feat
+import com.thejaxonhill.dnd5eapi.feat.domain.FeatPrerequisite
 
 data class FeatView(
     val index: String,

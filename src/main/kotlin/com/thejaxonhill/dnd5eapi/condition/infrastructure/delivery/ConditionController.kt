@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.condition.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.condition.application.dto.ConditionView
 import com.thejaxonhill.dnd5eapi.condition.application.usecase.LoadConditionByIndex
 import com.thejaxonhill.dnd5eapi.condition.application.usecase.LoadConditions
-import com.thejaxonhill.dnd5eapi.condition.domain.model.ConditionExample
+import com.thejaxonhill.dnd5eapi.condition.domain.ConditionExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

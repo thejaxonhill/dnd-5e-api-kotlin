@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.language.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.language.application.dto.LanguageView
 import com.thejaxonhill.dnd5eapi.language.application.usecase.LoadLanguageByIndex
 import com.thejaxonhill.dnd5eapi.language.application.usecase.LoadLanguages
-import com.thejaxonhill.dnd5eapi.language.domain.model.LanguageExample
+import com.thejaxonhill.dnd5eapi.language.domain.LanguageExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

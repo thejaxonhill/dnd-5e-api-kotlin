@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.race.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.race.application.dto.RaceView
 import com.thejaxonhill.dnd5eapi.race.application.usecase.LoadRaceByIndex
 import com.thejaxonhill.dnd5eapi.race.application.usecase.LoadRaces
-import com.thejaxonhill.dnd5eapi.race.domain.model.RaceExample
+import com.thejaxonhill.dnd5eapi.race.domain.RaceExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

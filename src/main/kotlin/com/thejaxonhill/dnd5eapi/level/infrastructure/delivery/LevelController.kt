@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.level.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.level.application.dto.LevelView
 import com.thejaxonhill.dnd5eapi.level.application.usecase.LoadLevelByIndex
 import com.thejaxonhill.dnd5eapi.level.application.usecase.LoadLevels
-import com.thejaxonhill.dnd5eapi.level.domain.model.LevelExample
+import com.thejaxonhill.dnd5eapi.level.domain.LevelExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

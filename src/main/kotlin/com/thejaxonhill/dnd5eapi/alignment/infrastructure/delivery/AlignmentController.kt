@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.alignment.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.alignment.application.dto.AlignmentView
 import com.thejaxonhill.dnd5eapi.alignment.application.usecase.LoadAlignmentByIndex
 import com.thejaxonhill.dnd5eapi.alignment.application.usecase.LoadAlignments
-import com.thejaxonhill.dnd5eapi.alignment.domain.model.AlignmentExample
+import com.thejaxonhill.dnd5eapi.alignment.domain.AlignmentExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

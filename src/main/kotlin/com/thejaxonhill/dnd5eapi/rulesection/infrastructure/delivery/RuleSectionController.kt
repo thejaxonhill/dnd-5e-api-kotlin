@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.rulesection.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.rulesection.application.dto.RuleSectionView
 import com.thejaxonhill.dnd5eapi.rulesection.application.usecase.LoadRuleSectionByIndex
 import com.thejaxonhill.dnd5eapi.rulesection.application.usecase.LoadRuleSections
-import com.thejaxonhill.dnd5eapi.rulesection.domain.model.RuleSectionExample
+import com.thejaxonhill.dnd5eapi.rulesection.domain.RuleSectionExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

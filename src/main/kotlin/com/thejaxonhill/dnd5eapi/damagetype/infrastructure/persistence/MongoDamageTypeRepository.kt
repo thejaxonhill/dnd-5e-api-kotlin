@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.damagetype.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.damagetype.domain.model.DamageType
-import com.thejaxonhill.dnd5eapi.damagetype.domain.model.DamageTypeExample
-import com.thejaxonhill.dnd5eapi.damagetype.domain.repository.DamageTypeRepository
+import com.thejaxonhill.dnd5eapi.damagetype.domain.DamageType
+import com.thejaxonhill.dnd5eapi.damagetype.domain.DamageTypeExample
+import com.thejaxonhill.dnd5eapi.damagetype.domain.DamageTypeRepository
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPageable

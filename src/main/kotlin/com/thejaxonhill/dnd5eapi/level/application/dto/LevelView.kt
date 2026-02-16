@@ -1,10 +1,10 @@
 package com.thejaxonhill.dnd5eapi.level.application.dto
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.thejaxonhill.dnd5eapi.level.domain.model.ClassSpecific
-import com.thejaxonhill.dnd5eapi.level.domain.model.Level
-import com.thejaxonhill.dnd5eapi.level.domain.model.SpellcastingSlots
-import com.thejaxonhill.dnd5eapi.level.domain.model.SubclassSpecific
+import com.thejaxonhill.dnd5eapi.level.domain.ClassSpecific
+import com.thejaxonhill.dnd5eapi.level.domain.Level
+import com.thejaxonhill.dnd5eapi.level.domain.SpellcastingSlots
+import com.thejaxonhill.dnd5eapi.level.domain.SubclassSpecific
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 
 data class LevelView(

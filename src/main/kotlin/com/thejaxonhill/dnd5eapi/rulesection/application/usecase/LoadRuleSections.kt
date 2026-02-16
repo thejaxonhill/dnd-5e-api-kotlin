@@ -1,8 +1,8 @@
 package com.thejaxonhill.dnd5eapi.rulesection.application.usecase
 
 import com.thejaxonhill.dnd5eapi.rulesection.application.dto.toView
-import com.thejaxonhill.dnd5eapi.rulesection.domain.model.RuleSectionExample
-import com.thejaxonhill.dnd5eapi.rulesection.domain.repository.RuleSectionRepository
+import com.thejaxonhill.dnd5eapi.rulesection.domain.RuleSectionExample
+import com.thejaxonhill.dnd5eapi.rulesection.domain.RuleSectionRepository
 import com.thejaxonhill.dnd5eapi.shared.application.stereotype.UseCase
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Page
 

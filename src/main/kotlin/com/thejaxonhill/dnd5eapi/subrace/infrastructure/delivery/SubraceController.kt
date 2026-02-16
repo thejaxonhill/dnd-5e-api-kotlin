@@ -5,7 +5,7 @@ import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toP
 import com.thejaxonhill.dnd5eapi.subrace.application.dto.SubraceView
 import com.thejaxonhill.dnd5eapi.subrace.application.usecase.LoadSubraceByIndex
 import com.thejaxonhill.dnd5eapi.subrace.application.usecase.LoadSubraces
-import com.thejaxonhill.dnd5eapi.subrace.domain.model.SubraceExample
+import com.thejaxonhill.dnd5eapi.subrace.domain.SubraceExample
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.tags.Tag
 import org.springdoc.core.annotations.ParameterObject

@@ -1,7 +1,7 @@
 package com.thejaxonhill.dnd5eapi.magicschool.application.usecase
 
 import com.thejaxonhill.dnd5eapi.magicschool.application.dto.toView
-import com.thejaxonhill.dnd5eapi.magicschool.domain.repository.MagicSchoolRepository
+import com.thejaxonhill.dnd5eapi.magicschool.domain.MagicSchoolRepository
 import com.thejaxonhill.dnd5eapi.shared.application.stereotype.UseCase
 
 @UseCase

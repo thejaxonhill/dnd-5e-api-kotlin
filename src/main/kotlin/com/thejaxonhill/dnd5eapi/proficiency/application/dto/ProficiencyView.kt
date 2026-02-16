@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.proficiency.application.dto
 
-import com.thejaxonhill.dnd5eapi.proficiency.domain.model.Proficiency
+import com.thejaxonhill.dnd5eapi.proficiency.domain.Proficiency
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 
 data class ProficiencyView(

@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.characterclass.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.characterclass.application.dto.CharacterClassView
 import com.thejaxonhill.dnd5eapi.characterclass.application.usecase.LoadCharacterClassByIndex
 import com.thejaxonhill.dnd5eapi.characterclass.application.usecase.LoadCharacterClasses
-import com.thejaxonhill.dnd5eapi.characterclass.domain.model.CharacterClassExample
+import com.thejaxonhill.dnd5eapi.characterclass.domain.CharacterClassExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

@@ -3,7 +3,7 @@ package com.thejaxonhill.dnd5eapi.feat.infrastructure.delivery
 import com.thejaxonhill.dnd5eapi.feat.application.dto.FeatView
 import com.thejaxonhill.dnd5eapi.feat.application.usecase.LoadFeatByIndex
 import com.thejaxonhill.dnd5eapi.feat.application.usecase.LoadFeats
-import com.thejaxonhill.dnd5eapi.feat.domain.model.FeatExample
+import com.thejaxonhill.dnd5eapi.feat.domain.FeatExample
 import com.thejaxonhill.dnd5eapi.shared.domain.model.PagedModel
 import com.thejaxonhill.dnd5eapi.shared.infrastructure.persistence.converter.toPage
 import io.swagger.v3.oas.annotations.Operation

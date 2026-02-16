@@ -1,6 +1,6 @@
 package com.thejaxonhill.dnd5eapi.feature.infrastructure.persistence
 
-import com.thejaxonhill.dnd5eapi.feature.domain.model.FeatureSpecific
+import com.thejaxonhill.dnd5eapi.feature.domain.FeatureSpecific
 import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import com.thejaxonhill.dnd5eapi.shared.domain.model.Prerequisite
 import org.springframework.data.annotation.Id
