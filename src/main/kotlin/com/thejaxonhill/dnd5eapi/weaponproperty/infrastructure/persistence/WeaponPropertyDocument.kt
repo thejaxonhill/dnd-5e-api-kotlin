@@ -4,7 +4,7 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime
 
-@Document(collection = "weapon-properties")
+@Document(collection = "2014-weapon-properties")
 class WeaponPropertyDocument(
     @Id
     var id: String? = null,

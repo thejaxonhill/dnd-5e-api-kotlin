@@ -4,7 +4,7 @@ import com.thejaxonhill.dnd5eapi.shared.domain.model.ApiReference
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 
-@Document(collection = "proficiencies")
+@Document(collection = "2014-2014-proficiencies")
 class ProficiencyDocument(
     @Id
     var id: String? = null,

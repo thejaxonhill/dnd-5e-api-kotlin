@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 import org.springframework.data.mongodb.core.mapping.Field
 import java.time.LocalDateTime
 
-@Document(collection = "subclasses")
+@Document(collection = "2014-subclasses")
 class SubclassDocument(
     @Id
     var id: String? = null,

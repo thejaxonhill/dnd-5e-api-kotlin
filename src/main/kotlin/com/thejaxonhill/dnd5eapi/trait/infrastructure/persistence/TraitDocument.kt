@@ -8,7 +8,7 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime
 
-@Document(collection = "traits")
+@Document(collection = "2014-traits")
 class TraitDocument(
     @Id
     var id: String? = null,

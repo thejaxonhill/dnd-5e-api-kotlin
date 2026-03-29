@@ -23,6 +23,10 @@ class MongoEquipmentRepository(private val repository: EquipmentMongoRepository)
             page.toPageable()
         ).toPagedModel().map { it.toDomain() }
 
+    override fun loadAll(page: Page, query: String?): PagedModel<Equipment> =
+        repository.findByNameContainsIgnoreCase(query ?: "", page.toPageable())
+            .toPagedModel().map { it.toDomain() }
+
     override fun save(equipment: Equipment) = repository.save(equipment.toDocument()).toDomain()
 }
 

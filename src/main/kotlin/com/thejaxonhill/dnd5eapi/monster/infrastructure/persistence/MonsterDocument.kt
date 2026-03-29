@@ -13,7 +13,7 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime
 
-@Document(collection = "monsters")
+@Document(collection = "2014-monsters")
 class MonsterDocument(
     @Id
     var id: String? = null,

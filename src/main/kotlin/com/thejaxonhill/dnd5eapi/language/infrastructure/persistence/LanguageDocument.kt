@@ -4,7 +4,7 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime
 
-@Document(collection = "languages")
+@Document(collection = "2014-languages")
 class LanguageDocument(
     @Id
     var id: String? = null,

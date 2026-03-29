@@ -5,7 +5,7 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime
 
-@Document(collection = "ability-scores")
+@Document(collection = "2014-ability-scores")
 class AbilityScoreDocument(
     @Id
     var id: String? = null,

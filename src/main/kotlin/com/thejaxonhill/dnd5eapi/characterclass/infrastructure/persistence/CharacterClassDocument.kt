@@ -9,7 +9,7 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime
 
-@Document(collection = "classes")
+@Document(collection = "2014-classes")
 class CharacterClassDocument(
     @Id
     var id: String? = null,

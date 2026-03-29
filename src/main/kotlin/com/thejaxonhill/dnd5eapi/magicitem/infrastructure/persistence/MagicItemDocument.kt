@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime
 
-@Document(collection = "magic-items")
+@Document(collection = "2014-magic-items")
 class MagicItemDocument(
     @Id
     var id: String? = null,
